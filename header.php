@@ -30,19 +30,21 @@ echo "<title>$appname$userstr</title><link rel='stylesheet" .
  . "<link href='CSS/bootstrap.min.css' rel='stylesheet' type='text/css'/>"
  . "<link href='CSS/responsivestylesheet.css' rel='stylesheet' type='text/css'/>"
  . "<link href='CSS/styles.css' rel='stylesheet' type='text/css'/>"
+ . "<link rel='stylesheet' href='CSS/main.css' type='text/css'>"
 //. "<link href='CSS/style.css' rel='stylesheet' type='text/css'/>"
 //. "<link href='CSS/style_home.css' rel='stylesheet' type='text/css'/>"
- . "<script src='JS/cufon-yui.js' type='text/javascript'></script>"
- . "<script src='JS/kriesi.js' type='text/javascript'></script>"
- . "<script src='JS/jquery.featureList-1.0.0.js' type='text/javascript'></script>"
+ //. "<script src='JS/cufon-yui.js' type='text/javascript'></script>"
+ //. "<script src='JS/kriesi.js' type='text/javascript'></script>"
+   //. "<script src='JS/jquery.featureList-1.0.0.js' type='text/javascript'></script>"
  
- . "<script src='JS/ie-emulation-modes-warning.js' type='text/javascript'></script>"
- . "<link href = 'CSS/als_demo.css' rel = 'stylesheet' media='screen', type = 'text/css'/>"
- ."<script type='text/javascript' src='https://www.idonate.ie/js/jquery.als-1.1.min.js'></script>"
- ."<script type='text/javascript' src='JS/jquery.als-1.1.min.js'></script>"
- . "<script src='JS/javascript.js' type='text/javascript'></script>"
- . "<script src='JS/quizconfig.js' type='text/javascript'></script>"
- . "<link rel='stylesheet' href='CSS/main.css' type='text/css'>";
+// . "<script src='JS/ie-emulation-modes-warning.js' type='text/javascript'></script>"
+//. "<link href = 'CSS/als_demo.css' rel = 'stylesheet' media='screen', type = 'text/css'/>"
+// ."<script type='text/javascript' src='https://www.idonate.ie/js/jquery.als-1.1.min.js'></script>"
+    ."<script type='text/javascript' src='JS/jquery-1.9.1.min.js'></script>"
+    ."<script type='text/javascript' src='JS/jquery.als-1.1.min.js'></script>"
+    . "<script src='JS/javascript.js' type='text/javascript'></script>";
+ //. "<script src='JS/quizconfig.js' type='text/javascript'></script>"
+ 
 "</head>"
         . "<body>";
 
