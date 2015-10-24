@@ -10,7 +10,7 @@
   $dbname  = "robinsnest";   // Modify these...
   $dbuser  = "root";   // ...variables according
   $dbpass  = "password";   // ...to your installation
-  $appname = "The History Of Computing"; // ...and preference
+  $appname = "IDonate"; // ...and preference
 
   $connection = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
   if ($connection->connect_error) die($connection->connect_error);

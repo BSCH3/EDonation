@@ -1,0 +1,928 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{margin:0; padding:0}
+div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote{margin:0;padding:0}
+body{margin:0; padding:0; color:#999999; font-family: 'open_sansregular'; font-size:13px; line-height:18px}
+table{border-collapse:collapse;border-spacing:0;}
+sup {vertical-align:text-top;}sub {vertical-align:text-bottom;}
+strong{ font-weight:normal; font-family: 'open_sansbold'; }
+img{border:0;}
+a{color:#EA6A00; outline:none; text-decoration:none; font-family: 'open_sansregular';}
+a:hover{color:#538f00}
+a:focus{outline:0 none}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
+/* Headings */
+h1, h2, h3, h4, h5 h6{font-family:'HelveticaNeueLT', Helvetica, Arial, sans-serif; margin:0;padding:0; font-weight:normal}
+h1{font-size:30px}
+h2{font-size:20px; margin:20px 0 10px}
+h3{font-size:18px}
+h4{font-size:15px; font-weight:bold; margin:0 0 5px 0}
+/* Lists */
+ul, ol, li{list-style:none; margin:0; padding:0}
+br{margin:0; padding:0}
+.clear{clear:both; margin:0px; padding:0px; height:0px; overflow:hidden;}
+.left{float:left}
+.right{float:right}
+input{margin:0;padding:0}
+.arht{ text-align:right}
+.alft{ text-align:left}
+.acenter{ text-align: center}
+.center{ margin:0 auto}
+p {margin:0px; padding:0px;}
+.relative {position:relative;}
+.padB19 {padding-bottom:19px !important;}
+/*Layout*/ 
+
+/* *************  Header Start here  ************* */
+header {background:url(../images/header-bottom-border.png) repeat-x center bottom; margin-bottom:-8px; position:relative; z-index:10;}
+.login-stripe{ background: #f5f5f5; /* for non-css3 browsers */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f5f5'); 	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5)); /* for webkit browsers */ background: -moz-linear-gradient(top,  #ffffff,  #f5f5f5); /* for firefox 3.6+ */ height:54px; border-bottom:#eeeeee 1px solid;}
+.login-stripe p {padding:17px 0 0 0px;}
+
+.auctions {position:fixed; right:0px; top:175px;}
+.social {position:fixed; left:0px; top:191px; background:url(../images/social_icon.png) no-repeat left top; padding:10px 0 0 6px; width:64px; height:206px; visibility:hidden;}
+
+.button {background:url(../images/button.png) no-repeat left top; padding-left:6px; display:inline-block;}
+.button span {background:url(../images/button.png) no-repeat right bottom; height:34px; line-height:31px; padding:0 19px 0 14px; display:block; font-size:14px; color:#fff;}
+
+/* Login Css*/
+.login-stripe .loginDv {margin-top:10px; line-height:31px; width:600px;}
+.login-stripe .loginDv a.login {float:right;}
+.login-stripe .loginDv .sep {background:url(../images/loginSep.png) no-repeat left 10px; margin:0 12px 0 20px; padding-left:20px;  font-family: 'open_sansitalic'; float:right;}
+.login-stripe .loginDv .signUp {color:#ca6d00; font-family: 'open_sans_semiboldregular'; float:right;}
+
+#logo{ height:98px; padding:18px 0 0 0; display:inline-block; float:left; width:350px; }
+#logo a {background:url(../images/iDonate_logo.png) no-repeat left top; width:230px; height:74px; display:block; text-indent:-1000px;}
+
+.contWrapper {width:980px; margin:0 auto; clear:both; overflow:hidden;}
+
+header nav {float:right; margin-top:34px;}
+header nav ul {}
+header nav ul li {float:left; margin:0 0 0 2px;}
+header nav ul li a {padding:0 0 0 6px; display:block;}
+header nav ul li a span {padding:0 17px 0 12px; height:33px; line-height:33px; display:block; color:#666666;}
+
+header nav ul li.act a,
+header nav ul li a:hover {background:url(../images/nav_bg.png) no-repeat left top;}
+header nav ul li.act a span,
+header nav ul li a:hover span {background:url(../images/nav_bg.png) no-repeat right bottom; color:#fff;}
+
+.main  {background:#fdfcfa; position:relative; z-index:9;}
+.main nav {background:url(../images/main_navBg.png) no-repeat center top; height:78px; width:985px; /*overflow:hidden;*/ clear:both; margin:0 auto;}
+.main nav ul {height:48px;}
+.main nav ul li {float:left;}
+.main nav ul li a {padding:0 0 0 8px;; display:block; border-left:1px solid #342c29; border-right:1px solid #342c29;}
+.main nav ul li a span {display:block; padding:0 8px 0 2px; display:block; height:48px; color:#fff; line-height:48px; font-weight:normal; text-transform:uppercase; cursor:pointer;  }
+:root .main nav ul li a span {padding:0 0px 0 7px \0/IE9; }  /* IE9 + IE10pp4 */
+
+.main nav ul li:hover a {background:url(../images/nav_hover.png) no-repeat right top; border-right:1px solid #000; border-left:1px solid #000;}
+
+.main nav ul li.selected a,
+.main nav ul li a:hover {background:url(../images/nav_hover.png) no-repeat center top; border-right:1px solid #000; border-left:1px solid #000;}
+.main nav ul li.first a:hover,
+.main nav ul li.first a {background-position:left top;}
+.main nav ul li.last a:hover,
+.main nav ul li.last a {background-position:right top;}
+
+.main nav ul li.first a{border-left:none;}
+.main nav ul li.last {float:right;}
+.main nav ul li.last a{border-right:none; position:relative; z-index:9;}
+.main nav ul li.last a span { *padding-right:20px; /* IE7 and below */ padding-right:18px; /* IE8 and below */  }
+
+#nav ul{margin:0; padding:0; list-style-type:none; list-style-position:outside; position:relative; line-height: 12px;}
+#nav ul {position:absolute; top: 41px; display:none; z-index: 8; margin-left:1px; width:149px;}
+#nav ul li {background-color: #342c29;  float:none; margin:0px!important; padding:0px !important;}
+#nav ul .first a{padding-top:15px;}
+#nav li:hover ul ul,
+#nav li:hover ul ul ul,
+#nav li:hover ul ul ul ul{display:none;}
+#nav li:hover ul,
+#nav li li:hover ul,
+#nav li li li:hover ul,
+#nav li li li li:hover ul{display:block;}
+#nav li ul a {display:block; font-size: 11px; background-image: none !important; padding:8px 5px 8px 10px; color:#fff; border:none; margin:0px !important; height:20px;}
+#nav li ul a:hover {background-color: #4d423d;}
+
+#banner {background:url(../images/banner_bg.png) no-repeat center top; width:100%; overflow:hidden; height:300px; }
+#banner .thumb {width:980px; margin:0 auto; position:relative;}
+#container {background:url(../images/contentBodyBg.jpg) repeat left top; padding-bottom:42px;}
+.pageWrapper {padding:28px 0 0 0;}
+
+.regisDvBox {background:url(../images/nav_shadow.png) no-repeat center bottom; padding:0 0 30px 0; overflow:hidden;}
+.regisDvBox .box1,.regisDvBox .box2,.regisDvBox .box3,.regisDvBox .box4 {float:left;}
+.regisDvBox .box1 {background:url(../images/eventBg.jpg) no-repeat left top; width:245px; height:193px;}
+.regisDvBox .box1 .button {background:url(../images/registerNow.png) no-repeat left top; width:177px; height:66px; margin:69px 0 0 41px;  }
+.regisDvBox .box1 .button a {width:144px; height:32px; display:block; margin:16px 0 0 6px; text-indent:-1000px;}
+
+.regisDvBox .box2 {background:url(../images/charity_bg.jpg) no-repeat left top; width:244px; height:193px;}
+.regisDvBox .box2 .button {background:url(../images/registerNowRd.png) no-repeat left top; width:144px; height:32px; display:block; text-indent:-1000px; margin:150px 0 0 81px;}
+
+.regisDvBox .box3 {background:url(../images/friend_bg.jpg) no-repeat left top; width:226px; height:193px; padding-left:20px;}
+.regisDvBox .box3 .inputBox {background:url(../images/sprite_images.png) no-repeat left top; width:207px; height:27px; margin:150px 0 0 0; line-height:27px; padding:0 0 0;}
+.regisDvBox .box3 .inputBox .input {margin:4px 0 0 8px; font-size:12px; color:#666666; height:16px; border:none; outline:none; line-height:17px; background:none; float:left; width:135px;}
+
+.regisDvBox .box3 .inputBox .button {background:url(../images/btn_go.png) no-repeat left top; width:52px; height:27px; border:none; float:right; cursor:pointer;}
+
+.regisDvBox .box4 {background:url(../images/iDonate_bg.png) no-repeat left top; width:225px; height:193px; padding-left:20px;}
+.regisDvBox .box4 .first {margin:66px 0 0 0;}
+.regisDvBox .box4 .sec {margin:12px 0 0 0;}
+.regisDvBox .box4 .inputBox {background:url(../images/sprite_images.png) no-repeat -208px top; width:205px; height:29px; line-height:29px;}
+.regisDvBox .box4 .inputBox .input {margin:6px 0 0 8px; font-size:12px; color:#666666; height:16px; border:none; outline:none; line-height:17px; background:none; float:left; width:135px;}
+.regisDvBox .first .button {background:url(../images/btn_search.png) no-repeat left top;}
+.regisDvBox .sec  .button {background:url(../images/btn_search.png) no-repeat left bottom;}
+.regisDvBox .box4 .inputBox .button {width:32px; height:29px; border:none; float:right; cursor:pointer; text-indent:-10000px;}
+.regisDvBox .box4 p {font-size:12px; color:#FFF; text-align:center; line-height:14px; margin:13px 0 0 0;}
+
+.recentAct {margin:15px 0 0 0;}
+.recentAct .top {background:url(../images/hm_crnTop.png) no-repeat center top; height:8px; width:100%;}
+.recentAct .content {background:url(../images/hm_crnMid.png) repeat-y center top; padding:15px 0 20px 20px; overflow:hidden;}
+.recentAct .tweet {background:url(../images/hm_crnBtm.png) no-repeat center bottom; height:68px;}
+
+/*Donate to a charity*/
+.recentAct .content .donateBox {background:url(../images/donate_charity_arw.jpg) no-repeat 20px 240px; width:298px;  padding-bottom:14px;}
+.recentAct .content .donateBox .readmore {background:url(../images/readmore_arw.jpg) no-repeat right 10px; font-size:16px; color:#0092d4; padding-right:30px;}
+.recentAct .content .donateBox .conent {background:#0092d4; height:219px; padding:21px 20px 0 19px; color:#fff; margin-bottom:21px;}
+.recentAct .content .donateBox .conent samp {background:url(../images/donete_charity_Icon.png) no-repeat left top; width:32px; height:29px; display:block; margin-left:1px;}
+.recentAct .content .donateBox .conent h2 {font-size:20px; font-family: 'open_sans_extraboldregular'; margin:13px 0 11px 0;}
+.recentAct .content .donateBox .conent p {line-height:20px; padding-bottom:18px;}
+.recentAct .content .donateBox .conent cite {font-family: 'open_sansitalic'; font-style:normal;}
+
+
+/*Upcoming events*/
+.recentAct .content .eventBox {background:url(../images/event_arw.jpg) no-repeat 20px 240px; width:298px;  padding-bottom:13px; margin-left:22px;}
+.recentAct .content .eventBox .readmore {background:url(../images/readmore_arw.jpg) no-repeat right -20px; font-size:16px; color:#d45500; padding-right:30px;}
+.recentAct .content .eventBox .conent {background:#d45500; height:219px; padding:21px 20px 0 19px; color:#fff; margin-bottom:21px;}
+.recentAct .content .eventBox .conent samp {background:url(../images/event_icon.png) no-repeat left top; width:32px; height:29px; display:block; margin-left:1px;}
+.recentAct .content .eventBox .conent h2 {font-size:20px; font-family: 'open_sans_extraboldregular'; margin:13px 0 11px 0;}
+.recentAct .content .eventBox .conent p {line-height:20px; padding-bottom:18px;}
+.recentAct .content .eventBox .conent cite {font-family: 'open_sansitalic'; font-style:normal;}
+
+.recentAct .content .fbRecentAct {/*background:url(../images/fbRecentActivity.jpg) no-repeat left top;*/ width:300px; height:247px; margin-left:22px;}
+
+/* Slider Style */
+#pxs_container {position:relative; width:100%; overflow:hidden; height:598px;}
+.pxs_container{
+	width:100%;
+	height:420px;
+	position:relative;
+	border-top:7px solid #333;
+	border-bottom:7px solid #333;
+	overflow:hidden;
+	-moz-box-shadow:0px 0px 7px #000;
+	-webkit-box-shadow:0px 0px 7px #000;
+	box-shadow:0px 0px 7px #000;
+}
+.pxs_bg{
+	background:transparent url(../images/bg.png) repeat top left;
+}
+.pxs_bg div{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:7584px; /*1264px window width times number of images*/
+	height:420px;
+	background-repeat:repeat;
+	background-position:top left;
+	background-color:transparent;
+}
+.pxs_bg .pxs_bg1{
+	background-image:url(../images/webtreats2.jpg);
+	/*left negative 1/8 of ww*/
+}
+.pxs_bg .pxs_bg2{
+	background-image:url(../images/bg2.png);
+	/*left negative 1/4 of ww*/
+}
+.pxs_bg .pxs_bg3{
+	background-image:url(../images/bg3.png);
+	/*left negative 1/2 of ww*/
+}
+.pxs_slider_wrapper{
+	display:none;
+}
+.pxs_container ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+ul.pxs_slider{
+	position:absolute;
+	left:0px;
+	top:0px;
+	/*height:420px;*/
+}
+ul.pxs_slider li{
+	/*height:420px;*/
+	float:left;
+	text-align:center;
+	position:relative;
+}
+ul.pxs_slider li img{
+	/*display:block;*/
+	/*margin:35px auto 0px auto;*/
+}
+ul.pxs_slider li.slide1 {background:url(../images/banner.png) no-repeat center top;}
+
+ul.pxs_thumbnails{
+	height:35px;
+	position:absolute;
+	top:6px;
+	right:7%;
+}
+ul.pxs_thumbnails li{
+	/*position:absolute;*/
+	display:block;
+	float:left;
+	margin:0 5px;
+	padding-bottom:12px;
+}
+ul.pxs_thumbnails li img{
+	/*border: 5px solid #FFFFFF;
+	-moz-box-shadow:1px 1px 7px #555;
+	-webkit-box-shadow:1px 1px 7px #555;
+	box-shadow:1px 1px 7px #555;*/
+	cursor:pointer;
+	width:68px !important;
+	height:38px;
+	display:block;
+	background:#faeef0;
+	opacity:0.7;
+	padding:3px;
+	border:3px solid #cfc7c8;
+}
+ul.pxs_thumbnails li.selected {
+	margin-top:-5px;
+	background:url(../images/thumbShadow.png) no-repeat center bottom;
+}
+ul.pxs_thumbnails li.selected img{
+	opacity:1.0;
+}
+.pxs_navigation span{
+	position:absolute;
+	width:30px;
+	height:60px;
+	-moz-box-shadow:0px 0px 2px #000;
+	-webkit-box-shadow:0px 0px 2px #000;
+	box-shadow:0px 0px 2px #000;
+	top:145px;
+	opacity:0.6;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	cursor:pointer;
+}
+.pxs_navigation span:hover{
+	opacity:0.9;
+}
+.pxs_navigation span.pxs_prev{
+	background:#000 url(../images/prev.png) no-repeat center center;
+}
+.pxs_navigation span.pxs_next{
+	background:#000 url(../images/next.png) no-repeat center center;
+}
+.pxs_loading{
+	color:#fff;
+	font-size:18px;
+	padding:15px 15px 15px 50px;
+	position:absolute;
+	background:#333 url(../images/ajax-loaders.gif) no-repeat 10px 50%;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	opacity:0.7;
+	width:170px;
+	position:absolute;
+	top:150px;
+	left:50%;
+	margin-left:-90px;
+}
+
+/* ******************* Twitter ******************* */
+.recentAct .twtr-widget { width:450px; padding:5px; float:right}
+.recentAct .twtr-hd, .recentAct .twtr-ft
+{
+display: none;
+}
+.twtr-widget .twtr-tweet {
+border:none!important;
+text-align:left;
+}
+.recentAct .twtr-timeline{
+height:55px!important;
+}
+.twtr-tweet-text {
+    font-size: 13px !important;
+    font-family:'open_sansregular' !important;
+    }
+.twtr-widget-1 .twtr-bd, #twtr-widget-1 .twtr-timeline i a, #twtr-widget-1 .twtr-bd p{
+    line-height:20px !important
+}
+.recentAct #twtr-widget-1 .recentAct.twtr-avatar{
+    margin-top:5px
+}
+recentAct .twtr-widget em, recentAct .twtr-widget recentAct .twtr-new-results{display:none};
+
+/* ******************* End Twitter ******************* */
+
+
+/* ******************* Inner pages ******************* */
+.innerBanner {background:url(../images/inner-bg.png) no-repeat center top; height:188px;}
+.title {padding:28px 0 27px 4px;}
+.title h1 {color:#58453c; font-family: 'open_sansbold'; font-size:24px; font-weight:normal; padding:0px;}
+.title h1 em {font-family:'open_sansitalic';}
+.title p {color:#333333; padding:12px 0 0 0;}
+
+.pageContant {background:url(../images/topBg.png) no-repeat left top; width:100%; padding:9px 0 0 0; margin:0 0 0 0;}
+.pageContant .wrapper {background:url(../images/btmBg.png) no-repeat left bottom; padding:0 0 9px 0;}
+.pageContant .wrapper .content{background:url(../images/midBg.png) repeat-y left top; padding:0 5px 0 4px; overflow:hidden}
+.pageContant .wrapper .pageSpace {padding:10px 20px;}
+.pageContant .wrapper .pageSpace p {margin:0 0 10px;}
+
+.searchBox {background:url(../images/sprite_images.png) no-repeat left -30px; width:257px; height:37px; margin:19px 2px 0 0;}
+.searchBox input[type="text"] {margin:9px 0 0 38px; height:19px; line-height:19px; border:1px solid #fff; outline:none; float:left; padding:0 5px 0 12px; width:145px; color:#666666; font-family: 'open_sansregular'; font-size:14px;}
+.searchBox input[type="submit"] {background:url(../images/sprite_images.png) no-repeat -260px -30px; width:52px; height:37px; border:none; float:right; cursor:pointer; outline:none;}
+
+.charityList {clear:both; overflow:hidden; border-bottom:1px solid #e7e7e7; font-size:13px; margin:0 0 0 0;}
+.charityList .charityImg,
+.charityList .charityName,
+.charityList .charityVaname,
+.projName,   .charityList .charityDetail {padding:12px 0; min-height:88px;}
+
+.charityList .charityImg {float:left; width:100px; border-right:1px solid #e7e7e7; text-align:center;}
+.charityList .charityImg samp {width:74px; height:74px; border:1px solid #e7e7e7; display:inline-block; padding:5px 0 0 0; background:#fff;}
+.charityList .charityImg samp img {max-width:65px; height:auto; max-height:65px;}
+.charityList .charityName, .projName {float:left; width:220px; border-right:1px solid #e7e7e7; padding-left:20px; padding-right:20px; }
+.charityList .charityName a, .projName a {color:#333333; font-size:14px; font-family: 'open_sansbold'; }
+.charityList .charityVaname {float:left; width:128px; border-right:1px solid #e7e7e7; text-align:center; color:#999999;}
+.charityList .charityDetail {float:left; width:440px; padding-left:20px; padding-right:20px; color:#333333;}
+.charityList .charityDetail a {float:right; border-bottom:2px solid #fadabf; color:#ea6a00; font-size:11px;}
+
+.even .charityImg {border-right:1px solid #f3f3f3;}
+.even .charityName, .even .projName {border-right:1px solid #f3f3f3;}
+.even .charityVaname {border-right:1px solid #f3f3f3;}
+
+.projName {
+    width: 340px;
+}
+
+.even  {background:#fff;}
+.odd {background:#f2f2f2;}
+
+.fundriserList {overflow:hidden; border-bottom:1px solid #e7e7e7; clear:both;}
+.fundriserList .riserImg,
+.fundriserList .fundriserDetail {padding:13px 0 11px 0;}
+
+.fundriserList .riserImg {width:100px; border-right:1px solid #e7e7e7; float:left; text-align:center;}
+.fundriserList .riserImg samp {width:74px; height:69px; border:1px solid #e7e7e7; text-align:center; display:inline-block; padding:3px 0 2px 0;}
+.fundriserList .riserImg samp img {max-width:69px; max-height:69px;}
+
+.fundriserList .fundriserDetail {float:left; padding-right:20px; padding-left:20px; width:85.4%;}
+.fundriserList .fundriserDetail .pgName {padding-bottom:5px;}
+.fundriserList .fundriserDetail .pgName a{font-size:13px; color:#333333;}
+.fundriserList .fundriserDetail .ownerName {font-size:13px; color:#999999;}
+
+.fundriserList .fundriserDetail .pgName span {width:105px; display:inline-block; color:#333333; font-family: 'open_sansbold'; font-size:14px;}
+.fundriserList .fundriserDetail .ownerName  span {width:105px; display:inline-block; }
+.fundriserList .fundriserDetail .ownerName a {float:right; border-bottom:2px solid #fadabf; color:#ea6a00; font-size:11px;}
+
+.even .riserImg {border-right:1px solid #f3f3f3;}
+
+.noRecord {font-size:13px; color:#da4b4b; padding:10px;}
+
+#charity_view {padding:6px 23px 0 34px;}
+#charity_view .charityLogo {background:url(../images/charity_logoRight.png) no-repeat right top; width:240px; height:128px; padding:14px 0 0 0; float:left; text-align:center;}
+#charity_view .charityLogo img {max-height:130px;}
+#charity_view .charityContact {float:left; width:650px; padding:0 0 0 22px;}
+#charity_view .charityContact h2 {font-family: 'open_sans_semiboldregular'; font-size:18px; color:#333333; margin:16px 0 10px;}
+#charity_view .charityContact div {padding:3px 0 0; clear:both; color:#333333;}
+#charity_view .charityContact div label {width:85px; display:inline-block;}
+#charity_view .charityContact div span {padding:0 5px; display:inline-block;}
+
+#charity_view h2.heading-pro {margin:0 0 15px; padding:0 0 5px; font-size: 22px;}
+#charity_view div.charity_status {margin:0 0 10px 0; padding:6px 20px 10px 20px; font-family: 'open_sans_semiboldregular'; font-size:13px; color:#333333;}
+#charity_view div.charity_cat  {margin: 0 30px 0 0;	display:inline;	width:40%; float:left;}
+#charity_view div.charity_reg {float:right; display:inline;}
+
+
+.iDonateBtn {margin:-28px 0 0 5px;}
+.iDonateBtn a {background:url(../images/sprite_images.png) no-repeat -172px -69px; width:140px; height:35px; display:inline-block; }
+.startFundraiser {margin:-28px 0 0 0;}
+.startFundraiser a {background:url(../images/sprite_images.png) no-repeat 0px -69px; width:171px; height:35px; display:inline-block; }
+
+.shadow-sep {background:url(../images/profile_sep.png) repeat-x left top; height:6px; margin:0 3px 22px 0;}
+
+.tabContent {background:#f7f7f7; padding:10px 18px 10px 19px; border-top:1px solid #dcdcdc;}
+#charity_view .tabContent h3 {margin:14px 0 11px; color:#333333; border-bottom:1px solid #cccccc; padding:0 0 19px; font-size:18px; font-family: 'open_sansbold'; text-transform:none; }
+#charity_view .tabContent p {margin-bottom:13px; line-height:18px;}
+#charity_view .tabContent strong {font-family: 'open_sans_semiboldregular'; font-size:13px; font-weight:normal;}
+#charity_view .tabContent ul {margin:0 0 13px 0;} 
+#charity_view .tabContent ul li {background:url(../images/li-dot.png) no-repeat 1px 10px; padding:0 0 0 15px; line-height:22px; color:#666666;}  
+
+#charity_view .tabContent .scroll-pane  {}
+
+#topcontrol {display:none;}
+.topcontrol {position:relative; width:980px; margin:0 auto;}
+.topcontrol a {position:absolute; right:-28px; bottom:24px; background:url(../images/scrollTop.png) no-repeat left top; width:33px; height:43px; text-indent:-10000px;}
+
+#events, #fundrasing {padding:0 0 10px;}
+.ui-tabs-panel table {width:100%;}
+.ui-tabs-panel table th {padding:5px 5px; text-align:center; border-top:1px solid #E7E7E7; border-bottom:1px solid #E7E7E7; color:#333 !important;} 
+.ui-tabs-panel table .first th {border-top:none;}
+.ui-tabs-panel table tr.row_format {line-height:30px; color:#333333; font-family: 'open_sansbold';}
+.ui-tabs-panel table tr.monthbg {background:#e7e7e7; font-family:'open_sansregular';}
+.ui-tabs-panel table tr.monthbg td {padding:6px 15px;}
+.ui-tabs-panel table tr.last {border-top:1px solid #e7e7e7; border-bottom:none;}
+.ui-tabs-panel table tr.last td {padding:10px 5px;}
+.ui-tabs-panel table tr.brdN td {border-right:none;}
+.ui-tabs-panel table tr.last td p a {color:#ea6a00;}
+.ui-tabs-panel table tr {border-bottom:1px solid #e7e7e7;}
+.ui-tabs-panel table tr td,
+.ui-tabs-panel table tr th {border-right:1px solid #E7E7E7; color:#666;}
+.ui-tabs-panel table tr td .startFundraising {color:#ea6a00; font-size:13px; font-family:'open_sansregular'; background:url(../images/arwRight.png) no-repeat right 6px; padding-right:19px;}
+.ui-tabs-panel table tr td {padding:11px 5px;}
+.ui-tabs-panel table tr td.eventDate {color:#999999;}
+.ui-tabs-panel table tr td.createdBycharity a {color:#666;}
+.ui-tabs-panel table tr td strong {font-family:'open_sans_semiboldregular'; font-weight:normal;}
+
+.viewlinkevent a {font-size:11px; color:#ea6a00; text-decoration:none; border-bottom:2px solid #fadabf; text-transform:uppercase; }
+
+form.contactus {padding:0 20px; margin:50px 0 0 20px;}
+form.contactus input.btn_submit {background:url(../images/sprite_images.png) no-repeat -315px -30px;width:90px;height:39px;border:none;cursor:pointer;margin-left:0px;}
+form.contactus p label {width:135px;float:left;}
+form.contactus p input[type="text"]{background-color:#fff; border:1px solid #cccccc !important; width:300px; text-align:left; height:20px; line-height:20px; outline:none;}
+form.contactus p textarea {background-color:#fff;border:1px solid #cccccc!important;width:300px;text-align:left; max-width:300px; min-width:300px; min-height:70px; max-height:70px;}
+form.contactus p em {color:#FF0000; padding-left:2px;}
+form.contactus p {padding-bottom:10px;}
+form.contactus p label.error {width:100%;clear:both;text-indent:135px;text-align:left; padding-left:0; font-size:10px;}
+form.contactus p label  {color: #666;  text-transform:capitalize; font-weight:normal; font-family: 'open_sansregular';}
+
+.bg_captcha {width:420px;height:100px;padding:0px;font-size:9px; margin-left:135px;}
+#txtCaptcha {background:#ffffff;border:2px solid #565656;text-align:center;font-weight:bold;font-family:Modern;font-size:16px;color:#000000;height:30px;width:200px;}
+#btnrefresh {display:block;padding-top:20px;cursor:pointer;float:right;}
+#captcha_id  {width:166px;height:20px;margin:10px 0 0 0;background:#fff!important; padding:0 0 0 0px; font-size:12px; border:1px solid #CCCCCC !important;}
+.bg_captcha label.error {width:100%!important;text-align:left; padding-left:0px; font-size:10px}
+.error{color:#FF0000 !important; border:#FF0000!important;text-align:center}
+
+
+.searchEvent {margin:0 0 18px; display:inline-block; width:100%;}
+.searchEvent h3 {color:#333333; font-size:15px; font-family:'open_sans_semiboldregular'; text-transform:none; margin-bottom:14px;}
+
+.searchEvent .inputBox {background: url(../images/sprite_images.png) no-repeat scroll left -150px; height: 37px; margin:0 13px 0 0; width: 262px; float:left;}
+.searchEvent input[type="text"] {margin:9px 0 0 38px; height:19px; line-height:19px; border:1px solid #fff; outline:none; float:left; padding:0 5px 0 12px; width:195px; color:#666666; font-size:14px; background:none;}
+
+.searchEvent .selectBox {float:left; background: url(../images/sprite_images.png) no-repeat scroll left -111px; width:261px; height:37px; padding:0 0 0 13px; margin:0 13px 0 0;}
+.searchEvent .selectBox .select {position:absolute; line-height:37px; width:245px; padding:0 5px; outline:none; height:37px; display:inline-block; color:#666666; font-size:14px; }
+.searchEvent .selectBox select {z-index:5; position:absolute; width:255px; padding:0 5px; opacity:0; filter: alpha(opacity = 0); margin:14px 0 0 0;}
+.searchEvent .selectBox select option {padding:1px 5px;}
+
+.searchEvent .goBtn {float:left; width:56px; margin:0 5px 0 0;}
+.searchEvent .goBtn input[type="submit"]{background:url(../images/sprite_images.png) no-repeat scroll -314px -71px; width:56px; height:37px; border:none; text-indent:-1000px; display:block; cursor:pointer; position:relative;}
+
+.searchEvent .clearBtn {float:left; width:77px;}
+.searchEvent .clearBtn a {background:url(../images/sprite_images.png) no-repeat scroll -373px -71px; width:77px; height:37px; border:none; text-indent:-1000px; display:block; cursor:pointer; position:relative;}
+
+/*Login page*/
+
+.registered,
+.newUser {padding:20px 20px 20px; float:left; width:45.8%; margin-top:20px;}
+.registered h3,
+
+.newUser h3 {color:#666; font-size:15px; border:none; margin:0 0 20px 0; padding:0 0 10px 0; border-bottom:1px solid #ccc; text-transform:none; font-family: 'open_sans_semiboldregular';}
+
+.btnDV,
+.btnDV input[type="submit"],
+.btnDV a, .forgotpw input[type="submit"] {background:url(../images/btn.png) no-repeat;}
+.eventType .btnDV input[type="submit"]{ width:170px}
+
+.btnDV {background-position:left top; padding-left:0;}
+.btnDV input[type="submit"],
+.btnDV a, .forgotpw input[type="submit"] {background-position:right bottom; border:none; padding:0 25px 0 18px;  margin-left:7px; display:inline-block; line-height:40px; height:40px; color:#342c29; font-size:16px; font-family: 'open_sans_semiboldregular'; font-weight:normal; cursor:pointer;  text-shadow: #f7c51a 1px 1px, #f7c51a 0 0; outline:none; }
+
+.reactiveDV {}
+.reactiveDV input[type="submit"]{background:url(../images/sprite_images.png) no-repeat -273px -189px; width:144px; height:39px; display:inline-block; border:none; cursor:pointer; }
+
+.forgotpw input[type="submit"]{width:100px; height:40px}
+.formDiv {padding:0 0 0 0;}
+.formDiv fieldset {border:none;}
+.formDiv fieldset dl {padding:0 0 10px; display:inline-block; clear:both; width:100%;}
+.formDiv fieldset dl dt {float:left; width:29.9%; line-height:24px;}
+.formDiv fieldset dl dt label em, #myaccount-user-form em, #changepassword-form span {color:#FF0000;}
+.formDiv fieldset dl dd {float:left; width:70%; position:relative;}
+.formDiv fieldset dl dd input[type="text"],
+.formDiv fieldset dl dd input[type="password"], #myaccount-user-form input[type="text"],
+.formDiv fieldset dl dd textarea {line-height:24px; border:1px solid #ccc; height:24px; width:70%; padding:0 5px; font-size:12px; color:#666666}
+.formDiv fieldset .payment-details dl dd input[type="text"]{ width:86% !important}
+
+.formDiv fieldset dl dd textarea {height:70px; max-height:200px; min-height:70px; max-width:90%; min-width:70%; border: 1px solid #CCCCCC;} 
+.formDiv fieldset dl dd .input25 {width:25% !important;}
+.charityLink {padding:0 0 10px 30px;}
+
+.formDiv fieldset dl dd .select {position:absolute; border:1px solid #CCCCCC; line-height:24px; width:70%; padding:0 3px; outline:none; height:24px; display:inline-block; background:url(../images/selectBoxArw.jpg) no-repeat scroll right -2px #FFFFFF !important; color:#898989; font-size:13px;}
+.formDiv fieldset dl dd select {z-index:5; position:absolute; opacity:0; filter: alpha(opacity = 0); width:70%; padding:2px 5px 0 5px;}  
+.formDiv fieldset dl dd select option {padding:1px 5px;}
+
+.formDiv fieldset dl dd label {line-height:18px;}
+.formDiv fieldset dl dd .capcha span.txtCapcha {display:block; padding:0 0 5px 0;}
+.formDiv fieldset dl dd .capcha input {float:left;} 
+#captchaimage img, .bg_captcha img{margin:0 10px!important; border:1px solid #CCCCCC; height:38px}
+
+.formDiv fieldset dl dd .capcha span.cashsens {margin:0 0 0 0; display:block; color:#999;}
+
+.formDiv fieldset dl dd label input[type="checkbox"]{float:left; height:19px; width:19px; margin:0 5px 0 0; }
+.formDiv p.requireTxt {display:block; color:#FF0000;}
+.linkArw {color:#ea6a00; font-size:13px; font-family:'open_sansregular'; background:url(../images/arwRight.png) no-repeat right 6px; padding-right:19px;}
+
+
+.setbtn {margin:0 0 0 25px; padding-bottom:10px;}
+.buttonSetSpace {float:right; margin:20px 10px 0 0; display:inline-block; width:190px;}
+.buttonSetSpace .backBtn {margin:0 10px 0 0;}
+.backBtn {display:inline-block;}
+.backBtn a {background:url(../images/sprite_images.png) no-repeat -276px -111px; width:90px; height:39px; display:block; text-indent:-10000px;}
+
+.nextBtn a,
+.nextBtn input[type="submit"] {background:url(../images/sprite_images.png) no-repeat -369px -111px; width:90px; height:39px; display:block; text-indent:-1000px; border:none; cursor:pointer;}
+
+.registered{ border-right:solid 1px #CCCCCC;}
+.newUser p {padding:0 0 20px 0;}
+
+.register {padding:15px;}
+
+/*charity details*/
+.charitydetails fieldset dl dd .select, .charitydetails fieldset dl dd select{  font-family: 'open_sansregular'; font-size:12px; z-index:0;}
+
+.charitydetails fieldset textarea{ width:200px}
+/* ******************* End Inner pages ******************* */
+
+/* ******************* Pagination ******************* */
+.pagination ul {float:right; margin:0 20px 0 0; padding:7px 0 9px 0;}
+.pagination ul li {float:left; padding:0 5px; font-family: 'open_sansregular'; font-size:11px;}
+.pagination ul li span {color:#ff6600; background:url(../images/pagination_bg.png) no-repeat left top; width:24px; height:24px; text-align:center; display:block; line-height:24px; font-weight:normal;}
+.pagination ul li a {line-height:24px;}
+
+/* ******************* End Pagination ******************* */
+
+
+/* **************** Start Start Fundraising page **************** */
+
+.tabs {width:100%; font-size:12px; font-weight:bold;line-height:normal;	margin-bottom:0; text-transform:uppercase; z-index:5; height:49px;}
+.tabs ul {margin:0; padding:10px 10px 0 0px; list-style:none;}
+.tabs li {float:left; margin:0 5px 0 0; padding:0;}
+.tabs a {float:left; background:url(../images/tabBg.png) no-repeat left top; margin:0; padding:0 0 0 6px; text-decoration:none;}
+.tabs a span {float:left; display:block; background:url(../images/tabBg.png) no-repeat right top; padding:6px 20px 4px 14px; color:#333333; line-height:29px;}
+.tabs a.active span {line-height:30px;}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+.tabs a span {float:none}
+
+/* End IE5-Mac hack */
+.tabs a:hover span {}
+.tabs a:hover {background-position:0% -42px;}
+.tabs a:hover span {background-position:100% -42px;}
+
+.tabs .active {background-position:0% -42px!important;}
+.tabs .active span {background-position:100% -42px!important;}	
+
+.cantfind {margin:20px 10px 0 ;}
+.cantfind h3{ margin:0 0 10px 0; padding:0 0 10px 0; border-bottom:1px solid #ccc; font-size:17px;  }
+.cantfind label input{ float:left; height:20px; width:20px;}
+.cantfind label {font-family: 'open_sans_semiboldregular'; padding:0 0 0 0; line-height:19px;}
+.search-link a{ font-weight:bold; text-decoration:none; color:#000} 
+.search-link a:hover{color:#eabb60}
+
+.startFundraising {}
+.startFundraising .ui-tabs-panel {border:1px solid #DCDCDC; padding-bottom:10px; border-bottom-right-radius:6px; border-bottom-left-radius:6px; border-top-right-radius:6px; border-top-left-radius:0px;}
+.startFundraising .ui-tabs-panel p {margin:0 0 10px 10px !important;}
+.startFundraising .ui-tabs-panel table {border-top:1px solid #E7E7E7;}
+.join-link  span{margin:0; padding:3px 5px 0 0 !important; float:left}
+
+.startFundraising #basic {margin:0 10px 10px;}
+.startFundraising #basic h3 {color:#333333; font-family: 'open_sans_semiboldregular';  font-size: 15px; margin-bottom: 14px; text-transform: none;}
+.startFundraising #basic .inputBox {background: url(../images/sprite_images.png) no-repeat scroll left -190px; height: 37px; margin:0 7px 0 0; width: 207px; float:left;}
+.startFundraising #basic input[type="text"] {margin:9px 0 0 38px; height:19px; line-height:19px; border:1px solid #fff; outline:none; float:left; padding:0 5px 0 12px; width:145px; color:#666666; font-size:14px; background:none;}
+
+.startFundraising #basic .selectBox {float:left; background: url(../images/sprite_images.png) no-repeat scroll -265px -151px; width:195px; height:37px; padding:0 0 0 13px; margin:0 8px 0 0;}
+.startFundraising #basic .selectBox .select {position:absolute; line-height:37px; width:180px; padding:0 5px; outline:none; height:37px; display:inline-block; color:#666666; font-size:14px; }
+.startFundraising #basic .selectBox select {z-index:5; position:absolute; width:190px; padding:0 5px; opacity:0; filter: alpha(opacity = 0); margin:14px 0 0 0;}
+.startFundraising #basic .selectBox select option {padding:1px 5px;}
+
+.startFundraising #basic .findBtn {float:left; width:56px; margin:0 0 0 0;}
+.startFundraising #basic .findBtn input[type="submit"],
+.startFundraising #basic .findBtn a {background:url(../images/sprite_images.png) no-repeat scroll -215px -190px; width:56px; height:37px; border:none; text-indent:-1000px; display:block; cursor:pointer; position:relative;}
+
+.startFundraising .pageList {margin:0 10px 10px; font-family:'open_sans_semiboldregular';}
+
+.myform {margin:20px 0 20px 0; width:97%; padding:14px}
+#basic h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+.specialOcation {padding:10px 10px;}
+.specialOcation h3 {color: #333333; font-family: 'open_sans_semiboldregular'; font-size: 15px; margin-bottom: 14px; text-transform: none; margin:10px 0 0 0;}
+.specialOcation ul {margin:10px 10px;}
+.specialOcation ul li {padding:3px 0; line-height:15px;}
+.specialOcation ul li label { display:inline-block;}
+.specialOcation ul li span {display:block; padding:0 0 5px 0;}
+.specialOcation ul li input[type="radio"], .mycharity input[type="radio"] {float:left; margin:0 5px 0 0; height:15px; width:15px;}
+.specialOcation ul li input[type="text"],.specialOcation input[type="text"], .mycharity input[type="text"] {border: 1px solid #CCCCCC; color: #666666; font-size: 12px; height: 24px; line-height: 24px; padding: 0 5px; width:250px;}
+.specialOcation ul li.donationamount label{display:inline-block; margin:0 10px 0 0;}
+
+.specialOcation ul li .select {position:absolute; border:1px solid #CCCCCC; line-height:24px; width:238px; padding:0 5px; outline:none; height:24px; display:inline-block; background:url(../images/selectBoxArw.jpg) no-repeat scroll right -2px #FFFFFF !important; color:#666666; font-size:13px;}
+.specialOcation ul li select {z-index:5; position:absolute; opacity:0; filter: alpha(opacity = 0); width:249px; padding:2px 5px 0 5px;}  
+.specialOcation ul li select option {padding:1px 5px;}
+
+.specialOcation ul li .serchCharity {margin:7px 5px 0 0; float:left;}
+
+.specialOcation ul li ul li{}
+
+.eventdisplay {display:none}
+.arwLink {color:#ea6a00; font-size:13px; font-family:'open_sansregular'; background:url(../images/arwRight.png) no-repeat right 6px; padding-right:19px;}
+
+.marB10 {margin-bottom:10px !important;}
+.marT10 {margin-top:10px !important;}
+
+.sidebar { border: 1px solid #DCDCDC; margin:0px 0 0 0; padding: 14px; float:left;
+width:175px; min-height:175px;}
+.sidebar ul {padding:0; margin:0;width:175px; float:left}
+.sidebar  ul li {border-bottom:1px dashed #ccc; line-height:18px; list-style-image:none; list-style-position:outside; list-style-type:none; margin:0 0 10px; padding:0 0 2px 10px; background:url(../images/li-dot.png) no-repeat scroll 1px 8px transparent;}
+.sidebar  ul li a {border: none; text-decoration:none; font-family:'open_sans_semiboldregular';}
+.sidebar  ul li a:hover {text-decoration: underline;}
+
+.myaccount-right{width:700px; float:right;}
+
+/* **************** End Start Fundraising page **************** */
+
+/* **************** Start My fundraising pages **************** */
+.fundingPage {}
+.fundingPage ul {margin:10px 0;}
+.fundingPage ul li {padding:0px; width:48%; float:left; padding:10px 10px; background:none; border-bottom:1px solid #ccc;}
+
+.fundingPage ul li .mypages samp {max-height:115px; display:inline-block;}
+.fundingPage ul li .mypages samp img {max-height:115px; width:auto; margin:0px;}
+.fundingPage ul li .paddingtopbottom  .mypages {float:left;}
+
+.fundingPage ul li.even {padding-left:0px; border-right:1px solid #ccc;}
+.fundingPage ul li.odd {padding-right:0px;}
+.fundingPage ul li .mypages-title {width:194px; float:left; font-family:'open_sansbold'; font-size:12px;}
+.fundingPage ul li .fbShare {width:137px; float:right;}
+.fundingPage ul li .fbShare a img {margin:0px;}
+
+.fundingPage ul li ul {margin:0px; width:135px;}
+.fundingPage ul li ul li {border:none !important; padding:0 0 10px 0; width:100%;}  
+.fundingPage ul li ul li strong {display:block;}
+
+.pagesLIsting ul{}
+.pagesLIsting ul li {float:left; width:31%; padding:10px;}
+.pagesLIsting ul li .mypages img {border: 1px solid #CCCCCC; float: left; margin: 0 10px 0 0; padding: 3px; max-width:130px;}
+.pageDV h2{ border-bottom: 1px solid #CCCCCC; color: #333333; font-family: 'open_sans_semiboldregular';   font-size: 15px;   margin-bottom: 14px; padding: 0 0 10px; text-transform: none;}
+.pagesLIsting ul li .mypages-title {font-family: 'open_sans_semiboldregular';  color: #333333; margin:0 0 5px 0;}
+.pagesLIsting ul li ul {width:140px;}
+.pagesLIsting ul li ul li {width:100%; padding:0 0 10px 0;}
+.pagesLIsting ul li ul li strong {width:100%; display:block;}
+.pad10 {padding:10px;}
+
+.makeLeftpart {border-right:1px solid #ccc; margin:0;  padding:10px 20px 10px 10px;  width:615px;}
+
+
+.makeRightpart {margin:0 0 10px; padding:0 10px;  width:250px;}
+
+.makeRightpart .profile-image {background: none repeat scroll 0 0 #EDEBEB; border: 1px solid #D6D6D6;  margin: 3px 0 10px 10px; padding: 5px; width: 168px;  font-size: 15px; text-align: center;}
+.makeRightpart .profile-image p {margin:0px !important; padding:10px; font-size:13px;  font-family:'open_sansbold'; color:#000000;}
+
+.makeRightpart dl {margin:0 0 20px 10px; padding:0}
+.makeRightpart dl dt{ margin:10px 0 0 0; padding:0}
+.makeRightpart dl dd{ margin:	0; padding:0}
+.makeRightpart dl dd a{ color:#e29d11}
+.makeRightpart dl dd a:hover{ color:#000}
+
+/* **************** End My fundraising pages **************** */
+
+.cycling-div {  background:#F6F6F6;border: 2px solid #DEDEDE;margin: 14px 0;padding: 14px}
+.cycling-img{  border: 1px solid #CCCCCC;margin:0 10px 0 0;padding:3px;float:left} 
+.cycling-date{ font-weight:bold; float:left; background:url(../images/calander.png) no-repeat; width:83px; height:83px; margin:0 0 0 10px
+; padding:28px 0 0 0; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:15px; text-align:center}
+.eventContPart {width:500px;}
+
+.btnStartFundraiser {margin:0 0 0 0;}
+.btnStartFundraiser a {background:url(../images/sprite_images.png) no-repeat 0px -69px; width:171px; height:35px; display:inline-block; border:none; }
+
+footer {background:url(../images/footer_bg.png) repeat-x left top; height:197px;}
+footer .logo {width:141px; background:url(../images/footer_logo.png) no-repeat left top; height:45px; margin:86px 0 0 0; float:left;}
+footer .links {width:655px; float:left; margin:35px 0 0 30px;}
+footer .links .left,
+footer .links .right {width:25px; height:127px; background:url(../images/footer_carly.png);}
+footer .links .left {background-position:left top;}
+footer .links .right {background-position:right top;}
+
+footer .links .copiright {float:left; text-align:center; color:#5f4900; margin:23px 0 14px 7px;}
+footer .links .f-link {float:left; text-align:center; color:#3c2e00; margin:0 0 0 31px; font-size:12px;}
+footer .links .f-link a {color:#3c2e00; line-height:20px;}
+footer .member {width:154px; margin:32px 0 0 0;}
+footer .member img {margin-bottom:5px; display:block;}
+
+/* CMS PAGES */
+.ulDotted h3 {border-bottom:1px solid #CCCCCC; padding:0 0 10px 0;}
+.ulDotted ul {clear: both;
+    display: block;
+    margin: 10px 0 15px;
+    overflow: hidden;}
+.ulDotted ul li {float:left; width:32%; background:url(../images/li-dot.png) no-repeat scroll 1px 10px; padding:2px 0 2px 10px;}
+
+.content {color:#666;}
+
+.contWrapper2 {width:980px; margin:0 auto; clear:both; overflow:visible;}
+
+/*Make a project donation page*/
+.owners_container{width:80%; float:left; border:1px solid #999999; padding:10px; max-height:200px; height:200px; overflow:auto;}
+
+#title{
+
+}
+
+.searchBtn
+	{
+		float:right;cursor:pointer;width:44px;height:38px;line-height:15px;
+
+		background-image:url(../images/search_owner.jpg);
+
+		background-position:left 0;
+
+		background-repeat:no-repeat;
+		
+		margin-right: 385px;
+		
+		position:absolute;
+		
+		margin-left:355px;
+		
+		margin-top:-28px;
+	}
+.search-background {
+
+		display: none;
+		
+		font-size: 13px;
+		
+		font-weight: bold;
+		
+		height: 160px;
+		
+		margin-left: 17%;
+		
+		margin-top: 6%;
+		
+		position: absolute;
+		
+		text-align: left;
+		
+		text-decoration: none;
+		
+		width: 470px;
+
+	}
+	
+.search_fund_background {
+
+		display: none;
+
+		height:160px;
+
+		position: absolute;
+
+	}
+.requiredfield {
+/*display:block;*/
+font-size:9px;
+text-align:left;
+width:100px;
+float:right;
+color:#FF3333;
+font-style:italic;
+}		
+/*Make a project donation page 2*/
+
+
+.donor-paymentn-frm .makeLeftpart.left.formDiv {
+  background: none repeat scroll 0 0 #f7f5f5;
+  border: 1px solid #e8e8e8;
+  margin-top: 13px;
+  padding: 15px;
+}
+
+.donor-paymentn-frm .specialOcation h3 {
+   font-family: 'open_sans_semiboldregular';
+  font-size: 17px;
+  margin: 10px 0 8px;
+      color: #0092d4;
+	   text-transform: uppercase;
+  
+}
+
+
+.donor-paymentn-frm input.frmninput {
+  border: 1px solid #e8e2e2 !important;
+  box-shadow: 0 0 4px #e7e3e3 inset;
+  height: 30px !important;
+}
+
+
+.donor-paymentn-frm .select.selCountry, .donor-paymentn-frm .select.selemonth, .donor-paymentn-frm .select.seleyear {  border: 1px solid #e8e2e2 !important;
+  box-shadow: 0 0 4px #e7e3e3 inset;
+    padding: 0 4px !important;
+  height: 30px !important}
+  
+  
+.donor-paymentn-frm .makeRightpart right strong {
+   color: #0092d4;
+  font-family: 'open_sansbold';
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+
+.donor-paymentn-frm .makeRightpart dl dd a strong {
+  color: #e29d11;
+  font-family: 'open_sansregular' !important;
+  font-weight: normal;
+}
+
+.donor-paymentn-frm .makeRightpart dl dd a strong:hover {
+  color: #000;
+}
+
+.donor-paymentn-frm .makeRightpart dl dt {
+  color: #0092d4;
+  margin:16px 0 0 !important;
+  line-height:18px !important;
+}
+
+
+.donor-paymentn-frm .payment-details i {
+  color: #dc4722;
+  float: left;
+  font-size: 10px;
+  line-height: 28px;
+}
+
+.donor-paymentn-frm .payment-details label{ color:#000000 !important;}
+
+
+.donor-paymentn-frm .btnDV {
+  background-position: left top;
+  display: table;
+  float: none;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.donor-paymentn-frm .formDiv fieldset dl dd .select {
+  background: url("../images/drop-icon.gif") no-repeat scroll right 12px #ffffff !important;
+    box-shadow: 0 0 4px #e7e3e3 inset;
+	 border: 1px solid #e8e2e2;
+      height: 29px;
+    line-height: 28px;
+	   font-size: 12px;
+	   color: #989898;
+	   margin:0px;
+}
+
+.donor-paymentn-frm  .message{box-shadow: 0 0 4px #e7e3e3 inset;
+	 border: 1px solid #e8e2e2;    margin-top: 10px !important;}
+
+.donor-paymentn-frm  .formDiv fieldset dl#country_div {
+  padding-bottom: 14px;
+}
+
+
+.donor-paymentn-frm .anonymous {
+  padding-top: 8px;
+}
+
+.donor-paymentn-frm .bottomgreyline {
+  border-bottom: 1px solid #cccccc;
+  padding: 0 0 20px;
+  color:#000000;
+}
+
+.donor-paymentn-frm .payment-details {
+  margin: 0;
+  padding: 10px 0 0;
+}
+
+
+.donor-paymentn-frm .select.selemonth, .donor-paymentn-frm .select.seleyear {
+  width: 39% !important;
+}
+
+.donor-paymentn-frm .leave-comments input.frmninput {
+  width: 388px;
+}
+
+.donor-paymentn-frm .checkbox{ vertical-align:middle;}
+
+.boxspe {
+  display: block;
+  height: 10px;
+}
