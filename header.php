@@ -21,30 +21,45 @@ if (isset($_SESSION['user'])) {
 
 echo "<!DOCTYPE html><html><head>";
 echo "<title>$appname$userstr</title><link rel='stylesheet" .
- "<meta charset='utf-8'>"
- . "<meta http-equiv='X-UA-Compatible' content='IE=edge'>"
- . "<meta name='viewport' content='width=device-width, initial-scale=1'>"
- . "<meta name='description' content=''>"
- . "<meta name='author' content=''>"
- . "<link rel='icon' href='Icon/favicon.ico?' type='image/x-icon'>"
- . "<link href='CSS/bootstrap.min.css' rel='stylesheet' type='text/css'/>"
- . "<link href='CSS/responsivestylesheet.css' rel='stylesheet' type='text/css'/>"
- . "<link href='CSS/styles.css' rel='stylesheet' type='text/css'/>"
- . "<link rel='stylesheet' href='CSS/main.css' type='text/css'>"
+"<meta charset='utf-8'>"
+. "<meta http-equiv='X-UA-Compatible' content='IE=edge'>"
+. "<meta name='viewport' content='width=device-width, initial-scale=1'>"
+. "<meta name='description' content=''>"
+. "<meta name='author' content=''>"
+. "<link rel='icon' href='Icon/favicon.ico?' type='image/x-icon'>"
+. "<link href='CSS/bootstrap.min.css' rel='stylesheet' type='text/css'/>"
+. "<link href='CSS/responsivestylesheet.css' rel='stylesheet' type='text/css'/>"
+. "<link href='CSS/styles.css' rel='stylesheet' type='text/css'/>"
 //. "<link href='CSS/style.css' rel='stylesheet' type='text/css'/>"
+. "<link href='CSS/main.css' rel='stylesheet' type='text/css'>"
+. "<link href = 'CSS/als_demo.css' rel = 'stylesheet' media='screen', type = 'text/css'/>"
 //. "<link href='CSS/style_home.css' rel='stylesheet' type='text/css'/>"
- //. "<script src='JS/cufon-yui.js' type='text/javascript'></script>"
- //. "<script src='JS/kriesi.js' type='text/javascript'></script>"
-   //. "<script src='JS/jquery.featureList-1.0.0.js' type='text/javascript'></script>"
- 
+//. "<script src='JS/cufon-yui.js' type='text/javascript'></script>"
+//. "<script src='JS/kriesi.js' type='text/javascript'></script>"
+//. "<script src='JS/tooltip.js' type='text/javascript'></script>"
+//. "<script src='JS/jquery.featureList-1.0.0.js' type='text/javascript'></script>"
 // . "<script src='JS/ie-emulation-modes-warning.js' type='text/javascript'></script>"
-//. "<link href = 'CSS/als_demo.css' rel = 'stylesheet' media='screen', type = 'text/css'/>"
-// ."<script type='text/javascript' src='https://www.idonate.ie/js/jquery.als-1.1.min.js'></script>"
-    ."<script type='text/javascript' src='JS/jquery-1.9.1.min.js'></script>"
-    ."<script type='text/javascript' src='JS/jquery.als-1.1.min.js'></script>"
-    . "<script src='JS/javascript.js' type='text/javascript'></script>";
- //. "<script src='JS/quizconfig.js' type='text/javascript'></script>"
- 
+// ."<noscript><img height='1' width='1' alt='' style='display:none' src='https://www.facebook.com/tr?id=702470799842868&amp;ev=PixelInitialized' /></noscript>" 
+. "<script type='text/javascript' src='https://www.idonate.ie/js/jquery-1.9.1.min.js'></script>"
+. "<script type='text/javascript' src='//www.googleadservices.com/pagead/conversion.js'></script>"
+. "<script type='text/javascript' src='JS/jquery-1.9.1.min.js'></script>"
+."<script type='text/javascript' src='https://www.idonate.ie/javascript/jquery-1.9.1.min.js'></script>"
+."<script type='text/javascript' src='https://www.idonate.ie/js/jquery.als-1.1.min.js'></script>"
+//."<script type='text/javascript' src='JS/jquery.als-1.1.min.js'></script>"
+
+. "<script type='text/javascript' src='JS/litlleslide.js'></script>"
+. "<script src='JS/javascript' type='text/javascript'></script>"
+."<script src='JS/swfobject_modified.js' type='text/javascript'></script>"
+."<script type='text/javascript' src='https://www.idonate.ie/javascript/Bebas_400.font.js'></script>"
+."<script type='text/javascript' src='https://www.idonate.ie/javascript/jquery.featureList-1.0.0.js'></script>"
+."<script type='text/javascript' src='https://www.idonate.ie/javascript/kriesi.js'></script>"
+."<script type='text/javascript' src='https://www.idonate.ie/js/jquery.easing.1.3.js'></script>"
+."<script type='text/javascript' src='https://www.idonate.ie/js/imageSlider.js'></script>"
+."<script type='text/javascript' src='https://www.idonate.ie/javascript/cufon-yui.js'></script>";
+
+
+//. "<script src='JS/quizconfig.js' type='text/javascript'></script>"
+
 "</head>"
         . "<body>";
 
