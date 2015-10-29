@@ -8,8 +8,8 @@
 	$(document).ready(function() 
 	{
 		$("#lista1").als({
-			visible_items: 6,
-			scrolling_items: 3,
+			visible_items: 5,
+			scrolling_items: 2,
 			orientation: "horizontal",
 			circular: "yes",
 			autoscroll: "yes",
