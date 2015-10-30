@@ -23,19 +23,14 @@
               quiz_score Integer(2),
               INDEX(user(6))');
   
-  createTable('topthree','user VARCHAR(16), quiz_score Integer(2),rank Integer(2)');
- 
-  
-
   createTable('messages', 
               'id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-              auth VARCHAR(16),
-              recip VARCHAR(16),
+              user VARCHAR(16),
               pm CHAR(1),
               time INT UNSIGNED,
               message VARCHAR(4096),
-              INDEX(auth(6)),
-              INDEX(recip(6))');
+              INDEX(charname(6)),
+              INDEX(user(6))');
 
   createTable('friends',
               'user VARCHAR(16),
@@ -48,14 +43,18 @@
               text VARCHAR(4096),
               INDEX(user(6))');
   
-   createTable('leaderboard',
-              'user VARCHAR(22),
-              text VARCHAR(32),
-              INDEX(user(9))');
+   createTable('charities',
+              'id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                charity_name VARCHAR (50),
+                Reg_No SMALLINT,
+                charity_purpose VARCHAR (150),
+                charity_location VARCHAR (150),
+                CHY SMALLINT,
+                CRO SMALLINT,
+               INDEX(id(9))');
    
    alterTable();
 ?>
-
     <br>...done.
   </body>
 </html>

@@ -62,11 +62,8 @@ echo ' <div class="navbar-wrapper">
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="signup.php">Signup</a></li>
-                            <li><a href="login.php">Login</a></li>
-                            <li><a href="aboutus.php">About Us</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Computer Generations <span class="caret"></span></a>
+                         <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Charities <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="1st_generation.php">First Generation</a></li>
                                     <li><a href="2nd_generation.php">Second Generation</a></li>
@@ -75,9 +72,11 @@ echo ' <div class="navbar-wrapper">
                                     <li><a href="5th_generation.php">Fifth Generation</a></li>
                                 </ul>
                             </li>
-
                             <li><a href="quizzes.php">Quiz Test</a></li>
-                            <li><a href="leaderboard.php">Leaderboard</a></li>
+                            <li><a href="registerCharity.php">Register your charity</a></li>
+                            <li><a href="signup.php">SignUp</a></li>
+                             <li><a href="login.php">Login</a></li>
+                            <li><a href="aboutus.php">About Us</a></li>
                         </ul>
 
                     </div>';
@@ -119,7 +118,7 @@ echo'</div>
             </div>
 
             <div class="item">
-                <img src="Images/fi_large.jpg" alt="Second slide">
+                <img src="Images/logo3.jpg" alt="Second slide">
                 <div class="container">
                     <div class="carousel-caption">
 
@@ -137,7 +136,7 @@ echo'</div>
             </div>
 
             <div class="item">
-                <img src="Images/1866bykgo2s1njpg.jpg" alt="Fourth slide">
+                <img src="Images/header2.jpg" alt="Fourth slide">
                 <div class="container">
                     <div class="carousel-caption">
 
