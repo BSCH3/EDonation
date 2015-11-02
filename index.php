@@ -63,155 +63,77 @@ require_once 'header.php';
                                 <!--<p>Find one of the many Charities & Fundraisers using iDonate.ie</p>-->
                     </div> 
                 </div> 
-                  <img class="img-circle" src="Images/searchcharity.png" style="width: 300px; height: 240px;">          
+                <img class="img-circle" src="Images/searchcharity.png" style="width: 300px; height: 240px;">          
                 <p>Search for a charity</p>
             </span>
         </div>
     </div>
     <!-- /END THE FEATURETTES -->
-    <hr class="featurette-divider">
     
-    <div class="row featurette">
-     <div class="clear"></div>          
-      <div id="lista1" class="als-container content">
-          	<script type="text/javascript">
-		$(document).ready(function() {
 
-			$.featureList(
-				$("#tabs li a"),
-				$("#output li"), {
-					start_item	:	0
-				}
-			);
-		});
-	</script>
-   	<script language="javascript" type="text/javascript">
-	$(document).ready(function() 
-	{
-		$("#lista1").als({
-			visible_items: 6,
-			scrolling_items: 3,
-			orientation: "horizontal",
-			circular: "yes",
-			autoscroll: "yes",
-			interval: 4000,
-			direction: "left",
-			start_from: 0
-		});
-	});
-	function checkfriend()
-	{
-		if(document.searchFriend.title.value=='' || document.searchFriend.title.value=='Find a Fundraiser')
-		{
-			alert("Please enter search keyword.");
-			document.searchFriend.title.focus();
-			return false;
-		}
-		else
-		{
-		var txt = document.searchFriend.title.value;
-		if(txt.length < 3)
-			{
-				alert("Please enter minimum 3 charecters.");
-				document.searchFriend.title.focus();
-				return false;
-			}
-		}
-		
-	}
-	function checkfundraiser()
-	{
-		if(document.searchfundraiser.title.value=='' || document.searchfundraiser.title.value=='Find a Fundraiser')
-		{
-			alert("Please enter search keyword.");
-			document.searchfundraiser.title.focus();
-			return false;
-		}
-		else
-		{
-		var txt = document.searchfundraiser.title.value;
-		if(txt.length < 3)
-			{
-				alert("Please enter minimum 3 charecters.");
-				document.searchfundraiser.title.focus();
-				return false;
-			}
-		}
-	}
-	function checkcharity()
-	{
-		if(document.searchcharity.title.value=='' || document.searchcharity.title.value=='Find a Charity')
-		{
-			alert("Please enter search keyword.");
-			document.searchcharity.title.focus();
-			return false;
-		}
-		else
-		{
-		var txt = document.searchcharity.title.value;
-		if(txt.length < 3)
-			{
-				alert("Please enter minimum 3 charecters.");
-				document.searchcharity.title.focus();
-				return false;
-			}
-		}
-	}
-    </script>
-      <h3 class="left">charities we work with..</h3>
-      <br />
-      <div class="scroller">
-      <span class="als-prev"><img src="images/thin_left_arrow_333.png" alt="prev" title="previous" /></span>
-      <div class= "als-viewport">
-        <ul class="als-wrapper">
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1073_the-grace-nolan-foundation.html"><img width="100" src="https://www.idonate.ie/logos/gracenolan.jpg" alt="The Grace Nolan Foundation" title="The Grace Nolan Foundation" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1254_lifesaving-initiatives-against-methanol---liam.html"><img width="100" src="https://www.idonate.ie/logos/1394028516_6_image.jpg" alt="Lifesaving Initiatives Against Methanol - LIAM" title="Lifesaving Initiatives Against Methanol - LIAM" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/2038_templebraden-church-renovation-fund.html"><img width="100" src="https://www.idonate.ie/logos/templebraden_church-01.jpg" alt="Templebraden Church Renovation Fund" title="Templebraden Church Renovation Fund" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/870_act-for-meningitis.html"><img width="100" src="https://www.idonate.ie/logos/act_logo.jpg" alt="ACT for Meningitis" title="ACT for Meningitis" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/750_blood-bike-west.html"><img width="100" src="https://www.idonate.ie/logos/blood_bike_west_text_side.jpg" alt="Blood Bike West" title="Blood Bike West" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/226_war-child-ireland.html"><img width="100" src="https://www.idonate.ie/logos/Warchild Logo.jpg" alt="War Child Ireland" title="War Child Ireland" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1931_m-u--barnhall-rfc.html"><img width="100" src="https://www.idonate.ie/logos/18439_100377713329732_5067864_n.jpg" alt="M.U. Barnhall RFC" title="M.U. Barnhall RFC" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1936_robert-flynn-trust.html"><img width="100" src="https://www.idonate.ie/logos/rflogo-web.jpg" alt="Robert Flynn Trust" title="Robert Flynn Trust" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1918_caps---cavan-autism-parents-support-group.html"><img width="100" src="https://www.idonate.ie/logos/1430216017_2_image.jpg" alt="CAPS - Cavan Autism Parents Support Group" title="CAPS - Cavan Autism Parents Support Group" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/182_nurture.html"><img width="100" src="https://www.idonate.ie/logos/Nurture_Charity.jpg" alt="Nurture" title="Nurture" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/328_dundalk-dog-rescue.html"><img width="100" src="https://www.idonate.ie/logos/ddr.jpg" alt="Dundalk Dog Rescue" title="Dundalk Dog Rescue" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1324_leo-giron-scholarship-fund.html"><img width="100" src="https://www.idonate.ie/logos/leo-giron.jpg" alt="Leo Giron Scholarship Fund" title="Leo Giron Scholarship Fund" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/233_croi.html"><img width="100" src="https://www.idonate.ie/logos/Croi.jpg" alt="Croi" title="Croi" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/412_bilberry-goat-heritage-trust.html"><img width="100" src="https://www.idonate.ie/logos/img043.jpg" alt="Bilberry Goat Heritage Trust" title="Bilberry Goat Heritage Trust" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1226_rooskey-church-renovation-fund.html"><img width="100" src="https://www.idonate.ie/logos/rooskey-church.jpg" alt="Rooskey Church Renovation Fund" title="Rooskey Church Renovation Fund" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1545_ballinteer-educate-together-national-school.html"><img width="100" src="https://www.idonate.ie/logos/5796873_orig.jpg" alt="Ballinteer Educate Together National School" title="Ballinteer Educate Together National School" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/360_barnardos.html"><img width="100" src="https://www.idonate.ie/logos/barnardos.jpg" alt="Barnardos" title="Barnardos" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/544_knockadoon-youth-week.html"><img width="100" src="https://www.idonate.ie/logos/KYW_Crest_Complete.jpg" alt="Knockadoon Youth Week" title="Knockadoon Youth Week" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1457_darndale-belcamp-integrated-childcare-service-ltd.html"><img width="100" src="https://www.idonate.ie/logos/jigsaw-centre-1.jpg" alt="Darndale Belcamp Integrated Childcare Service Ltd" title="Darndale Belcamp Integrated Childcare Service Ltd" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/195_teni---transgender-equality-network-ireland.html"><img width="100" src="https://www.idonate.ie/logos/Colour logo with text _ print quality.jpg" alt="TENI - Transgender Equality Network Ireland" title="TENI - Transgender Equality Network Ireland" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1971_cork--s-96fm-giving-for-living-radiothon.html"><img width="100" src="https://www.idonate.ie/logos/radiothon.png" alt="Cork\'s 96fm Giving for Living Radiothon" title="Cork's 96fm Giving for Living Radiothon" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1089_family-life-services.html"><img width="100" src="https://www.idonate.ie/logos/familycastlebar.jpg" alt="Family Life Services" title="Family Life Services" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/559_lupus-group-ireland.html"><img width="100" src="https://www.idonate.ie/logos/lupus-support.jpg" alt="Lupus Group Ireland" title="Lupus Group Ireland" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/910_kerry-mountain-rescue-association.html"><img width="100" src="https://www.idonate.ie/logos/title2.jpg" alt="Kerry Mountain Rescue Association" title="Kerry Mountain Rescue Association" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/301_arthrogryposis-association-of-ireland.html"><img width="100" src="https://www.idonate.ie/logos/AAI Basic Logo.jpg" alt="Arthrogryposis Association of Ireland" title="Arthrogryposis Association of Ireland" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/656_progressio-ireland.html"><img width="100" src="https://www.idonate.ie/logos/fb_progressio_narrow.jpg" alt="Progressio Ireland" title="Progressio Ireland" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1038_the-bridge-cafe.html"><img width="100" src="https://www.idonate.ie/logos/The_Bridge_Full_Square_FB_Logo.jpg" alt="The Bridge Cafe" title="The Bridge Cafe" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1174_nurses-for-jordan.html"><img width="100" src="https://www.idonate.ie/logos/20131203_140953.jpg" alt="Nurses For Jordan" title="Nurses For Jordan" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1885_midleton-educate-together-national-school.html"><img width="100" src="https://www.idonate.ie/logos/School_Logo.png" alt="Midleton Educate Together National School" title="Midleton Educate Together National School" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1118_galway-visually-impaired-activity-club.html"><img width="100" src="https://www.idonate.ie/logos/VIP_logo_2.jpg" alt="Galway Visually Impaired Activity Club" title="Galway Visually Impaired Activity Club" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1280_mary--s-meals.html"><img width="100" src="https://www.idonate.ie/logos/MarysMeals_RGB.jpg" alt="Mary\'s Meals" title="Mary's Meals" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/1380_shandon-appeal.html"><img width="100" src="https://www.idonate.ie/logos/Shandon_Appeal.png" alt="Shandon Appeal" title="Shandon Appeal" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/2086_drogheda-homeless-aid.html"><img width="100" src="https://www.idonate.ie/logos/DHA.jpg" alt="Drogheda Homeless Aid" title="Drogheda Homeless Aid" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/2153_look-good-feel-better-ireland.html"><img width="100" src="https://www.idonate.ie/logos/lookgoodfeelbetter.jpg" alt="Look Good Feel Better Ireland" title="Look Good Feel Better Ireland" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/731_aoibheanns-pink-tie.html"><img width="100" src="https://www.idonate.ie/logos/apt.jpg" alt="Aoibheanns Pink Tie" title="Aoibheanns Pink Tie" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/828_wexford-islamic-cultural-centre.html"><img width="100" src="https://www.idonate.ie/logos/wicc-1.jpg" alt="Wexford Islamic Cultural Centre" title="Wexford Islamic Cultural Centre" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/2021_aoife-beary.html"><img width="100" src="https://www.idonate.ie/logos/11665545_1100428239972066_4354284057686208242_n_2_.jpg" alt="Aoife Beary" title="Aoife Beary" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/2142_mayo-kitty-catcher.html"><img width="100" src="https://www.idonate.ie/logos/mkc-2.jpg" alt="Mayo Kitty-Catcher" title="Mayo Kitty-Catcher" /></a></li>
-                    <li class="als-item"><a target="_blank" href="https://www.idonate.ie/345_carlow-bible-church.html"><img width="100" src="https://www.idonate.ie/logos/LOGO.JPG" alt="Carlow Bible Church" title="Carlow Bible Church" /></a></li>
+    <div class="row featurette">
+
+        <div class="clear"></div>          
+        <div id="lista1" class="als-container content">
+            <h3 class="left">registered charities...</h3>
+            
+            
+            <div class="scroller">
+      <span data-id="als-prev_0" class="als-prev"><img src="images/thin_left_arrow_333.png" alt="prev" title="previous"></span>
+      <div id="als-viewport_0" class="als-viewport">
+        <ul style="width: 5538px; height: 95px;" id="als-wrapper_0" class="als-wrapper">
+                    <li style="left: 5112px;" id="als-item_0_0" class="als-item"><a target="_blank" href="https://www.idonate.ie/172_western-alzheimers.html"><img src="https://www.idonate.ie/logos/western-alz.jpg" alt="Western Alzheimers" title="Western Alzheimers" width="100"></a></li>
+                    <li style="left: 5112px;" id="als-item_0_1" class="als-item"><a target="_blank" href="https://www.idonate.ie/2153_look-good-feel-better-ireland.html"><img src="https://www.idonate.ie/logos/lookgoodfeelbetter.jpg" alt="Look Good Feel Better Ireland" title="Look Good Feel Better Ireland" width="100"></a></li>
+                    <li style="left: 5112px;" id="als-item_0_2" class="als-item"><a target="_blank" href="https://www.idonate.ie/932_borrisokane-community-college-autism-centre.html"><img src="https://www.idonate.ie/logos/crest_white__background_high_resolution.jpeg" alt="Borrisokane Community College Autism Centre" title="Borrisokane Community College Autism Centre" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_3" class="als-item"><a target="_blank" href="https://www.idonate.ie/877_ballinderreen-juvenile-hurling-club.html"><img src="https://www.idonate.ie/logos/club_logo.jpg" alt="Ballinderreen Juvenile Hurling Club" title="Ballinderreen Juvenile Hurling Club" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_4" class="als-item"><a target="_blank" href="https://www.idonate.ie/1220_cope-foundation.html"><img src="https://www.idonate.ie/logos/COPE_LOGO.jpg" alt="COPE Foundation" title="COPE Foundation" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_5" class="als-item"><a target="_blank" href="https://www.idonate.ie/2128_jump-autism-support.html"><img src="https://www.idonate.ie/logos/JUMP_logo_b.jpg" alt="Jump Autism Support" title="Jump Autism Support" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_6" class="als-item"><a target="_blank" href="https://www.idonate.ie/333_the-carers-association.html"><img src="https://www.idonate.ie/logos/carers Stationery.jpg" alt="The Carers Association" title="The Carers Association" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_7" class="als-item"><a target="_blank" href="https://www.idonate.ie/1165_dublin-lesbian-line.html"><img src="https://www.idonate.ie/logos/1387571107_39_Vertical_Curved.jpg" alt="Dublin Lesbian Line" title="Dublin Lesbian Line" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_8" class="als-item"><a target="_blank" href="https://www.idonate.ie/1593_hope-for-zoe-.html"><img src="https://www.idonate.ie/logos/1417622238_13_image.jpg" alt="Hope for Zoe " title="Hope for Zoe " width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_9" class="als-item"><a target="_blank" href="https://www.idonate.ie/225_mymind.html"><img src="https://www.idonate.ie/logos/FB.jpg" alt="MyMind" title="MyMind" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_10" class="als-item"><a target="_blank" href="https://www.idonate.ie/1594_my-lovely-horse-rescue.html"><img src="https://www.idonate.ie/logos/1416417875_8_430MM_x_430MM.jpg" alt="My Lovely Horse Rescue" title="My Lovely Horse Rescue" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_11" class="als-item"><a target="_blank" href="https://www.idonate.ie/1848_fingal-spca.html"><img src="https://www.idonate.ie/logos/fingal-spca.jpg" alt="Fingal SPCA" title="Fingal SPCA" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_12" class="als-item"><a target="_blank" href="https://www.idonate.ie/1602_down-syndrome-limerick.html"><img src="https://www.idonate.ie/logos/DSLS_Logo2.jpg" alt="Down Syndrome Limerick" title="Down Syndrome Limerick" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_13" class="als-item"><a target="_blank" href="https://www.idonate.ie/293_donegal-mountain-rescueteam.html"><img src="https://www.idonate.ie/logos/DMRTMember9cm.jpg" alt="Donegal Mountain RescueTeam" title="Donegal Mountain RescueTeam" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_14" class="als-item"><a target="_blank" href="https://www.idonate.ie/941_jigsaw-roscommon-.html"><img src="https://www.idonate.ie/logos/Jigsaw_Roscommon_high.jpg" alt="Jigsaw Roscommon " title="Jigsaw Roscommon " width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_15" class="als-item"><a target="_blank" href="https://www.idonate.ie/2161_newcastle-west-christmas-lights-fund.html"><img src="https://www.idonate.ie/logos/Banner-for-online-fundraising.jpg" alt="Newcastle West Christmas Lights Fund" title="Newcastle West Christmas Lights Fund" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_16" class="als-item"><a target="_blank" href="https://www.idonate.ie/1584_north-tipperary-hospice-movement.html"><img src="https://www.idonate.ie/logos/hospice_Logo.jpg" alt="North Tipperary Hospice Movement" title="North Tipperary Hospice Movement" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_17" class="als-item"><a target="_blank" href="https://www.idonate.ie/612_jacks-wish-2-walk.html"><img src="https://www.idonate.ie/logos/jacks-wish-2-walk.jpg" alt="Jacks Wish 2 Walk" title="Jacks Wish 2 Walk" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_18" class="als-item"><a target="_blank" href="https://www.idonate.ie/1553_andrew-lydon-trust.html"><img src="https://www.idonate.ie/logos/1425566102_23_logo.png" alt="Andrew Lydon Trust" title="Andrew Lydon Trust" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_19" class="als-item"><a target="_blank" href="https://www.idonate.ie/755_university-of-limerick-foundation.html"><img src="https://www.idonate.ie/logos/FoundationMay_standard_w_b_logo.jpg" alt="University of Limerick Foundation" title="University of Limerick Foundation" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_20" class="als-item"><a target="_blank" href="https://www.idonate.ie/1562_ian--s-trust.html"><img src="https://www.idonate.ie/logos/1412198515_6_image.jpg" alt="Ian\'s Trust" title="Ian's Trust" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_21" class="als-item"><a target="_blank" href="https://www.idonate.ie/1583_sams-steps.html"><img src="https://www.idonate.ie/logos/001__7_.JPG" alt="Sams Steps" title="Sams Steps" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_22" class="als-item"><a target="_blank" href="https://www.idonate.ie/2148_our-lady-of-the-apostles-.html"><img src="https://www.idonate.ie/logos/1443628186_8_image.jpg" alt="Our Lady Of The Apostles " title="Our Lady Of The Apostles " width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_23" class="als-item"><a target="_blank" href="https://www.idonate.ie/1419_kilcavan-gaa.html"><img src="https://www.idonate.ie/logos/Kilcavan_Logo.jpg" alt="Kilcavan GAA" title="Kilcavan GAA" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_24" class="als-item"><a target="_blank" href="https://www.idonate.ie/1599_the-lochlann-doyle-fund.html"><img src="https://www.idonate.ie/logos/068.JPG" alt="The Lochlann Doyle Fund" title="The Lochlann Doyle Fund" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_25" class="als-item"><a target="_blank" href="https://www.idonate.ie/1275_rossbeigh-playground-and-muti-sport-area-project.html"><img src="https://www.idonate.ie/logos/Rossbeigh-1.jpg" alt="Rossbeigh Playground and Muti-Sport Area Project" title="Rossbeigh Playground and Muti-Sport Area Project" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_26" class="als-item"><a target="_blank" href="https://www.idonate.ie/357_scoop.html"><img src="https://www.idonate.ie/logos/SCOOP_Logo_jpeg_183kb.jpg" alt="SCOOP" title="SCOOP" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_27" class="als-item"><a target="_blank" href="https://www.idonate.ie/848_the-ethiopia-deaf-project.html"><img src="https://www.idonate.ie/logos/230513.jpg" alt="The Ethiopia Deaf Project" title="The Ethiopia Deaf Project" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_28" class="als-item"><a target="_blank" href="https://www.idonate.ie/944_ethan--s-trust.html"><img src="https://www.idonate.ie/logos/ethan-1.jpg" alt="Ethan\'s Trust" title="Ethan's Trust" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_29" class="als-item"><a target="_blank" href="https://www.idonate.ie/1323_aim-family-services.html"><img src="https://www.idonate.ie/logos/aim.jpg" alt="AIM Family Services" title="AIM Family Services" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_30" class="als-item"><a target="_blank" href="https://www.idonate.ie/861_coeliac-society-of-ireland.html"><img src="https://www.idonate.ie/logos/csi_logo_RGB.jpg" alt="Coeliac Society of Ireland" title="Coeliac Society of Ireland" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_31" class="als-item"><a target="_blank" href="https://www.idonate.ie/1093_saoirse-foundation.html"><img src="https://www.idonate.ie/logos/SaoirseFoundationLogo.jpg" alt="Saoirse Foundation" title="Saoirse Foundation" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_32" class="als-item"><a target="_blank" href="https://www.idonate.ie/1523_dunboyne-ac-.html"><img src="https://www.idonate.ie/logos/dunboyne-ac-logo.jpg" alt="Dunboyne AC " title="Dunboyne AC " width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_33" class="als-item"><a target="_blank" href="https://www.idonate.ie/963_suas-educational-development.html"><img src="https://www.idonate.ie/logos/Suas_Logo-_good_quality.jpg" alt="Suas Educational Development" title="Suas Educational Development" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_34" class="als-item"><a target="_blank" href="https://www.idonate.ie/1414_irish-guide-dogs.html"><img src="https://www.idonate.ie/logos/IGDB_logo.jpg" alt="Irish Guide Dogs" title="Irish Guide Dogs" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_35" class="als-item"><a target="_blank" href="https://www.idonate.ie/231_the-integration-centre.html"><img src="https://www.idonate.ie/logos/TIC_rgb.JPG" alt="The Integration Centre" title="The Integration Centre" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_36" class="als-item"><a target="_blank" href="https://www.idonate.ie/1910_cgi-eastern-region-raise-the-roof.html"><img src="https://www.idonate.ie/logos/CGI_Logo_hi_res.jpg" alt="CGI Eastern Region Raise the Roof" title="CGI Eastern Region Raise the Roof" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_37" class="als-item"><a target="_blank" href="https://www.idonate.ie/232_myaware--formerly-myasthenia-gravis-association-.html"><img src="https://www.idonate.ie/logos/email-signature-logo.png" alt="Myaware (formerly Myasthenia Gravis Association)" title="Myaware (formerly Myasthenia Gravis Association)" width="100"></a></li>
+                    <li style="left: -426px;" id="als-item_0_38" class="als-item"><a target="_blank" href="https://www.idonate.ie/371_threshold-.html"><img src="https://www.idonate.ie/logos/Threshold logo - charity.jpg" alt="Threshold " title="Threshold " width="100"></a></li>
                   </ul>
       </div>
-      <span class="als-next"><img src="images/thin_right_arrow_333.png" alt="next" title="next" /></span> 
+      <span data-id="als-next_0" class="als-next"><img src="images/thin_right_arrow_333.png" alt="next" title="next"></span> 
        </div>
-      
-       <div class="clear"></div>
+            
+        
+        </div>
+        <div class="clear"></div>
+
+
+
     </div>
-    </div>
-             
+
     <!-- FOOTER -->
     <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
@@ -220,10 +142,21 @@ require_once 'header.php';
 
 </div>
 
+<script type="text/javascript">
+<!--
+swfobject.registerObject("FlashID");
+//-->
+</script>
 </body>
+
+<script type="text/javascript" src="JS/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="JS/jquery.als-1.1.min.js"></script>
+<script type='text/javascript' src='JS/litlleslide.js'></script>
+
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../assets/js/vendor/holder.min.js"></script>
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </html>
-
-
 <!--references:
 http://www.csi.ucd.ie/staff/jcarthy/home/CourseNotes/History%20%20+%20chips.pdf
 http://www.tutorialspoint.com/computer_fundamentals/pdf/computer_generations.pdf
