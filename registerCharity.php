@@ -52,27 +52,27 @@
 _END;
 
   $error = $charity_name = $Reg_No = $charity_purpose = $charity_location = $CHY = $CRO = "";
-  if (isset($_SESSION['charity_name'])) destroySession();
+  if (isset($_SESSION['charity_name'&&'Reg_No'&& 'charity_purpose'&&'charity_location' && 'CHY'&& 'CRO'])) destroySession();
 
-  if (isset($_POST['charity_name']))
+  if (isset($_POST['charity_name'&&'Reg_No'&& 'charity_purpose'&&'charity_location' && 'CHY'&& 'CRO']))
   {
-    $charity_name = sanitizeString($_POST['charname']);
-    $Reg_No = sanitizeString($_POST['Reg.No']);
-    $charity_purpose = sanitizeString($_POST['charpurpose']);
-    $charity_location = sanitizeString($_POST['charlocation']);
-    $CHY = sanitizeString($_POST['CHY number']);
-    $CRO = sanitizeString($_POST['CRO number']);
+    $charity_name = sanitizeString($_POST['charity_name']);
+    $Reg_No = sanitizeString($_POST['Reg_No']);
+    $charity_purpose = sanitizeString($_POST['charity_purpose']);
+    $charity_location = sanitizeString($_POST['charity_location']);
+    $CHY = sanitizeString($_POST['CHY']);
+    $CRO = sanitizeString($_POST['CRO']);
 
     if ($charity_name =="" || $Reg_No == "" || $charity_purpose == "" || $charity_location == ""|| $CHY =="" || $CRO =="" )
       $error = "Not all fields were entered<br><br>";
     else
     {
-      $result = queryMysql("SELECT * FROM charities WHERE charname ='$charity_name");
+      $result = queryMysql("SELECT * FROM charities WHERE charity_name ='$charity_name");
       if ($result->num_rows)
         $error = "That charity already exists<br><br>";
       else
       {
-        queryMysql("INSERT INTO charities VALUES('0','$charity_name', '$Reg_No','0','$charity_purpose', '$charity_location', '0', '$CHY', '0', '$CRO', '0')");
+        queryMysql("INSERT INTO charities VALUES('0','$charity_name', '$Reg_No','0','$charity_purpose', '$charity_location', '0', '$CHY', '$CRO', '0')");
         die("<h4>Charity is successfully registered!</h4>Please go to the homepage.<br><br>");
       }
     }
@@ -82,31 +82,33 @@ _END;
    <div class="container marketing">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-            <form name="Charity Register" method="post" action="index.php" role="form">$error
+            <form name="Charity Register" method="post" action="registerCharity.php" role="form">$error
                 <fieldset>
                     <h2>Register your Charity</h2>
           <br/>
                      <hr class="colorgraph">
                         <div class="form-group">
-                             <input name="Name of charity" type="text" id="user" value"$charity_name" class="form-control input-lg" placeholder="Name of charity" required autofocus>
+                             <input name="charity_name" type="text" id="charity_name" value"$charity_name" class="form-control input-lg" placeholder="Name of charity" required autofocus>
                         </div>   
                             <div class="form-group">
-                             <input name="Reg.No" type="number" id="Reg.No" value"$Reg_No" class="form-control input-lg" placeholder="Charity Reg.No" required autofocus>
+                             <input name="Reg_No" type="number" id="Reg_No" value"$Reg_No" class="form-control input-lg" placeholder="Charity Reg.No" required autofocus>
                         </div> 
                         <div class="form-group">
-                             <input name="purpose" type="text" id="purpose" value"$charity_purpose" class="form-control input-lg" placeholder="Charity purpose" required autofocus>
+                             <input name="charity_purpose" type="text" id="charity_purpose" value"$charity_purpose" class="form-control input-lg" placeholder="Charity purpose" required autofocus>
                         </div> 
                         <div class="form-group">
-                            <input type="text" name="location" id="pass" value="$charity_location" class="form-control input-lg" placeholder="Principal location" required>
+                            <input type="text" name="charity_location" id="charity_location" value="$charity_location" class="form-control input-lg" placeholder="Principal location" required>
                         </div>
                         <div class="form-group">
-                            <input type="number" name="CHY Number" id="number" value="$CHY" class="form-control input-lg" placeholder="CHY Number" required>
+                            <input type="number" name="CHY" id="CHY" value="$CHY" class="form-control input-lg" placeholder="CHY Number" required>
                         </div>
                         <div class="form-group">
-                            <input type="number" name="CRO Number" id="number" value="$CRO" class="form-control input-lg" placeholder="CRO Number" required>
+                            <input type="number" name="CRO" id="CRO" value="$CRO" class="form-control input-lg" placeholder="CRO Number" required>
                         </div>
-                    
-                            <div class="row">                                               
+                      <div class="row">
+                                 <div class="col-xs-6 col-sm-6 col-md-6">
+                                <a href="index.php"  class="btn btn-lg btn-success btn-block">Back To HomePage</a> 
+                            </div> 
                         <div class="col-xs-6 col-sm-6 col-md-6">
                             <input type="submit" name="submit" value="Register" class="btn btn-lg btn-primary btn-block">
                         </div>

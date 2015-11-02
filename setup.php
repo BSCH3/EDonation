@@ -29,7 +29,6 @@
               pm CHAR(1),
               time INT UNSIGNED,
               message VARCHAR(4096),
-              INDEX(charname(6)),
               INDEX(user(6))');
 
   createTable('friends',
@@ -44,14 +43,14 @@
               INDEX(user(6))');
   
    createTable('charities',
-              'id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-                charity_name VARCHAR (50),
-                Reg_No SMALLINT,
+              'charity_name VARCHAR (50),
+                Reg_No integer(2),
                 charity_purpose VARCHAR (150),
                 charity_location VARCHAR (150),
-                CHY SMALLINT,
-                CRO SMALLINT,
-               INDEX(id(9))');
+                CHY integer(2),
+                CRO integer(2),
+                INDEX(charity_name(6))');
+                
    
    alterTable();
 ?>
