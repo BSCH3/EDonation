@@ -16,7 +16,7 @@ require_once 'header.php';
 <!-- START THE FEATURETTES -->
 
 <div class="container marketing">
-    <h2>Computer Generations</h2>
+    <h2>Support Charities</h2>
     <div class="row">
         <!-- Three columns of text below the carousel -->
         <hr class="featurette-divider">
