@@ -86,7 +86,6 @@ echo ' <div class="navbar-wrapper">
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li><a href="charity.php">Charity</a></li>
-                            <li><a href="quizzes.php">Quiz Test</a></li>
                             <li><a href="registerCharity.php">Register your charity</a></li>
                             <li><a href="signup.php">SignUp</a></li>
                              <li><a href="login.php">Login</a></li>
