@@ -32,7 +32,7 @@ echo "<title>$appname$userstr</title><link rel='stylesheet" .
 . "<link href='CSS/styles.css' rel='stylesheet' type='text/css'/>"
 //. "<link href='CSS/style.css' rel='stylesheet' type='text/css'/>"
 . "<link href='CSS/main.css' rel='stylesheet' type='text/css'>"
-. "<link href = 'CSS/als_demo.css' rel = 'stylesheet' media='screen', type = 'text/css'/>"
+. "<link href = 'CSS/als_demo.css' rel = 'stylesheet' media='screen' type = 'text/css'/>"
 //. "<link href='CSS/style_home.css' rel='stylesheet' type='text/css'/>"
 //. "<script src='JS/cufon-yui.js' type='text/javascript'></script>"
 //. "<script src='JS/kriesi.js' type='text/javascript'></script>"
@@ -44,9 +44,8 @@ echo "<title>$appname$userstr</title><link rel='stylesheet" .
 . "<script type='text/javascript' src='//www.googleadservices.com/pagead/conversion.js'></script>"
 . "<script type='text/javascript' src='JS/jquery-1.9.1.min.js'></script>"
 ."<script type='text/javascript' src='https://www.idonate.ie/javascript/jquery-1.9.1.min.js'></script>"
-."<script type='text/javascript' src='https://www.idonate.ie/js/jquery.als-1.1.min.js'></script>"
-//."<script type='text/javascript' src='JS/jquery.als-1.1.min.js'></script>"
-
+."<script type='text/javascript' src='JS/jquery.als-1.1.min.js'></script>"
+." <script type='text/javascript' src='JS/littleslide.js'></script>"
 . "<script type='text/javascript' src='JS/litlleslide.js'></script>"
 . "<script src='JS/javascript' type='text/javascript'></script>"
 ."<script src='JS/swfobject_modified.js' type='text/javascript'></script>"
@@ -75,26 +74,29 @@ echo ' <div class="navbar-wrapper">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.php">Home</a>
+                        <a class="navbar-brand" href="index.php">IDonation</a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="signup.php">Signup</a></li>
-                            <li><a href="login.php">Login</a></li>
-                            <li><a href="aboutus.php">About Us</a></li>
+                            <li><a href="makedonation.php">Make A Donation</a></li>
+                            <li><a href="startfundrasing.php">Start Fundraising</a></li>
+                            <li><a href="listofcharities.php">Carities List</a></li>
+                            <li><a href="prioritizedcharities.php">Prioritized Charities</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Computer Generations <span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Events<span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="1st_generation.php">First Generation</a></li>
-                                    <li><a href="2nd_generation.php">Second Generation</a></li>
+                                    <li><a href="currentlyevents.php">Currently Events</a></li>
+                                    <li><a href="pastevents.php">Past Events</a></li>
+                                    <li><a href="upcomingevents.php">Second Generation</a></li>
                                     <li><a href="3rd_generation.php">Third Generation</a></li>
                                     <li><a href="4th_generation.php">Fourth Generation</a></li>
                                     <li><a href="5th_generation.php">Fifth Generation</a></li>
                                 </ul>
                             </li>
 
-                            <li><a href="quizzes.php">Quiz Test</a></li>
-                            <li><a href="leaderboard.php">Leaderboard</a></li>
+                            <li><a href="signup.php">Registration</a></li>
+                            <li><a href="login.php">Login</a></li>
+                            <li><a href="aboutus.php">About Us</a></li>
                         </ul>
 
                     </div>';

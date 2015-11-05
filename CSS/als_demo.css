@@ -18,13 +18,14 @@
 	width: 100%;
 	margin: 0px auto;
 }
-.scroller{width:80% !important; 
+.scroller{width:90% !important; 
          overflow:hidden; 
          margin: 30px 30px 30px 30px;}
 .als-viewport {
 	position: relative;
 	overflow: hidden;
-	margin: 0 auto 0 25px; width:100%!important
+	margin: 0 45px 0 105px; 
+        width:100%!important
 }
 
 .als-wrapper {
@@ -37,7 +38,7 @@
 	display: block;
 	text-align: center;
 	cursor: pointer;
-	float: left;
+	float: right;
 }
 
 .als-prev, .als-next {
@@ -65,13 +66,13 @@
 }
 
 #lista1 .als-prev, #lista1 .als-next {
-	top: 85px;
+	top: 145px;
 	width: 15px;
 	height: 22px;
 }
-#lista1 .als-prev {	left: 30px}
+#lista1 .als-prev {	left: 25px}
 
-#lista1 .als-next {right: 30px}
+#lista1 .als-next {right: 25px}
 
 
 
