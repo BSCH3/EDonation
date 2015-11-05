@@ -18,7 +18,6 @@ if (isset($_SESSION['user'])) {
 } else
     $loggedin = FALSE;
 
-
 echo "<!DOCTYPE html><html><head>";
 echo "<title>$appname$userstr</title><link rel='stylesheet" .
 "<meta charset='utf-8'>"
@@ -86,23 +85,13 @@ echo ' <div class="navbar-wrapper">
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                         <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Charities <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="1st_generation.php">First Generation</a></li>
-                                    <li><a href="2nd_generation.php">Second Generation</a></li>
-                                    <li><a href="3rd_generation.php">Third Generation</a></li>
-                                    <li><a href="4th_generation.php">Fourth Generation</a></li>
-                                    <li><a href="5th_generation.php">Fifth Generation</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="charity.php">Charity</a></li>
                             <li><a href="quizzes.php">Quiz Test</a></li>
                             <li><a href="registerCharity.php">Register your charity</a></li>
                             <li><a href="signup.php">SignUp</a></li>
                              <li><a href="login.php">Login</a></li>
                             <li><a href="aboutus.php">About Us</a></li>
                         </ul>
-
                     </div>';
 if ($loggedin) {
     echo "<font color='white'>You are logged in as <a href='members.php?view=$user'>$userstr</a> &nbsp;|&nbsp; "
