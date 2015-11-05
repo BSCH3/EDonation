@@ -97,7 +97,7 @@ _END;
                              <input name="charity_purpose" type="text" id="charity_purpose" value"$charity_purpose" class="form-control input-lg" placeholder="Charity purpose" required autofocus>
                         </div> 
                         <div class="form-group">
-                            <input type="text" name="charity_location" id="charity_location" value="$charity_location" class="form-control input-lg" placeholder="Principal location" required>
+                            <input type="text" name="charity_location" id="charity_location" value="$charity_location" class="form-control input-lg" placeholder="Principal location" required autofocus>
                         </div>
                         <div class="form-group">
                             <input type="number" name="CHY" id="CHY" value="$CHY" class="form-control input-lg" placeholder="CHY Number" required>
