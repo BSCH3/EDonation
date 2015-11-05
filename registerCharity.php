@@ -51,7 +51,7 @@
   
 _END;
 
-  $error = $charity_name = $Reg_No = $charity_purpose = $charity_location = $CHY = $CRO = "";
+  $error = $charity_name = $Reg_No = $charity_purpose = $charity_location = $CHY = $CRO = " ";
   if (isset($_SESSION['charity_name'&&'Reg_No'&& 'charity_purpose'&&'charity_location' && 'CHY'&& 'CRO'])) destroySession();
 
   if (isset($_POST['charity_name'&&'Reg_No'&& 'charity_purpose'&&'charity_location' && 'CHY'&& 'CRO']))
