@@ -32,31 +32,28 @@ echo "<title>$appname$userstr</title><link rel='stylesheet" .
 . "<link href='CSS/styles.css' rel='stylesheet' type='text/css'/>"
 //. "<link href='CSS/style.css' rel='stylesheet' type='text/css'/>"
 . "<link href='CSS/main.css' rel='stylesheet' type='text/css'>"
-. "<link href = 'CSS/als_demo.css' rel = 'stylesheet' media='screen' type = 'text/css'/>"
-//. "<link href='CSS/style_home.css' rel='stylesheet' type='text/css'/>"
+. "<link href = 'CSS/als_demo.css' rel = 'stylesheet' type = 'text/css'/>"
+. "<link href='CSS/style_home.css' rel='stylesheet' type='text/css'/>"
+
 //. "<script src='JS/cufon-yui.js' type='text/javascript'></script>"
 //. "<script src='JS/kriesi.js' type='text/javascript'></script>"
 //. "<script src='JS/tooltip.js' type='text/javascript'></script>"
 //. "<script src='JS/jquery.featureList-1.0.0.js' type='text/javascript'></script>"
-// . "<script src='JS/ie-emulation-modes-warning.js' type='text/javascript'></script>"
-// ."<noscript><img height='1' width='1' alt='' style='display:none' src='https://www.facebook.com/tr?id=702470799842868&amp;ev=PixelInitialized' /></noscript>" 
-. "<script type='text/javascript' src='https://www.idonate.ie/js/jquery-1.9.1.min.js'></script>"
-. "<script type='text/javascript' src='//www.googleadservices.com/pagead/conversion.js'></script>"
+."<script src='JS/ie-emulation-modes-warning.js' type='text/javascript'></script>"
+//."<noscript><img height='1' width='1' alt='' style='display:none' src='https://www.facebook.com/tr?id=702470799842868&amp;ev=PixelInitialized' /></noscript>" 
 . "<script type='text/javascript' src='JS/jquery-1.9.1.min.js'></script>"
-."<script type='text/javascript' src='https://www.idonate.ie/javascript/jquery-1.9.1.min.js'></script>"
+//"<script type='text/javascript' src='//www.googleadservices.com/pagead/conversion.js'></script>"
+//."<script type='text/javascript' src='https://www.idonate.ie/javascript/jquery-1.9.1.min.js'></script>"
 ."<script type='text/javascript' src='JS/jquery.als-1.1.min.js'></script>"
-." <script type='text/javascript' src='JS/littleslide.js'></script>"
-. "<script type='text/javascript' src='JS/litlleslide.js'></script>"
-. "<script src='JS/javascript' type='text/javascript'></script>"
-."<script src='JS/swfobject_modified.js' type='text/javascript'></script>"
-."<script type='text/javascript' src='https://www.idonate.ie/javascript/Bebas_400.font.js'></script>"
-."<script type='text/javascript' src='https://www.idonate.ie/javascript/jquery.featureList-1.0.0.js'></script>"
-."<script type='text/javascript' src='https://www.idonate.ie/javascript/kriesi.js'></script>"
-."<script type='text/javascript' src='https://www.idonate.ie/js/jquery.easing.1.3.js'></script>"
-."<script type='text/javascript' src='https://www.idonate.ie/js/imageSlider.js'></script>"
-."<script type='text/javascript' src='https://www.idonate.ie/javascript/cufon-yui.js'></script>";
-
-
+." <script type='text/javascript' src='JS/littleslide.js'></script>";
+//. "<script src='JS/javascript' type='text/javascript'></script>"
+//."<script src='JS/swfobject_modified.js' type='text/javascript'></script>"
+//."<script type='text/javascript' src='JS/Bebas_400.font.js'></script>"
+//."<script type='text/javascript' src='JS/jquery.featureList-1.0.0.js'></script>"
+//."<script type='text/javascript' src='https://www.idonate.ie/javascript/kriesi.js'></script>"
+//."<script type='text/javascript' src='https://www.idonate.ie/js/jquery.easing.1.3.js'></script>";
+//."<script type='text/javascript' src='https://www.idonate.ie/js/imageSlider.js'></script>"
+//."<script type='text/javascript' src='https://www.idonate.ie/javascript/cufon-yui.js'></script>";
 //. "<script src='JS/quizconfig.js' type='text/javascript'></script>"
 
 "</head>"
@@ -68,33 +65,30 @@ echo ' <div class="navbar-wrapper">
             <nav class="navbar navbar-inverse navbar-static-top">
                 <div class="container">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.php">IDonation</a>
+                        <a class="navbar-brand" href="index.php">EDonation</a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="makedonation.php">Make A Donation</a></li>
+                            <li class="active"><a href="makedonation.php">Make A Donation</a></li>
                             <li><a href="startfundrasing.php">Start Fundraising</a></li>
-                            <li><a href="listofcharities.php">Carities List</a></li>
-                            <li><a href="prioritizedcharities.php">Prioritized Charities</a></li>
+                            <li><a href="charities.php">Charities</a></li>
+                            <li><a href="prioritizedcharities.php">Prioritized</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Events<span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="currentlyevents.php">Currently Events</a></li>
                                     <li><a href="pastevents.php">Past Events</a></li>
-                                    <li><a href="upcomingevents.php">Second Generation</a></li>
-                                    <li><a href="3rd_generation.php">Third Generation</a></li>
-                                    <li><a href="4th_generation.php">Fourth Generation</a></li>
-                                    <li><a href="5th_generation.php">Fifth Generation</a></li>
+                                    <li><a href="upcomingevents.php">Upcoming Events</a></li>
                                 </ul>
                             </li>
 
-                            <li><a href="signup.php">Registration</a></li>
+                            <li><a href="registerCharity.php">Registration</a></li>
                             <li><a href="login.php">Login</a></li>
                             <li><a href="aboutus.php">About Us</a></li>
                         </ul>
@@ -138,7 +132,7 @@ echo'</div>
             </div>
 
             <div class="item">
-                <img src="Images/fi_large.jpg" alt="Second slide">
+                <img src="Images/header2.jpg" alt="Second slide">
                 <div class="container">
                     <div class="carousel-caption">
 
@@ -147,7 +141,7 @@ echo'</div>
             </div>                
 
             <div class="item">
-                <img src="Images/header1.jpg" alt="Third slide">
+                <img src="Images/fundraising (1).jpg" alt="Third slide">
                 <div class="container">
                     <div class="carousel-caption">
 
@@ -156,7 +150,7 @@ echo'</div>
             </div>
 
             <div class="item">
-                <img src="Images/1866bykgo2s1njpg.jpg" alt="Fourth slide">
+                <img src="Images/header5.jpg" alt="Fourth slide">
                 <div class="container">
                     <div class="carousel-caption">
 

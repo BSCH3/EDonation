@@ -9,13 +9,13 @@
 	{
 		$("#lista1").als({
 			visible_items: 6,
-			scrolling_items: 3,
+			scrolling_items: 2,
 			orientation: "horizontal",
 			circular: "yes",
 			autoscroll: "yes",
 			interval: 4000,
 			direction: "left",
-			start_from: 0
+			start_from: 1
 		});
 	});
 	function checkfriend()

@@ -16,26 +16,26 @@ require_once 'header.php';
 <!-- START THE FEATURETTES -->
 
 <div class="container marketing">
-    <h2>Computer Generations</h2>
+    <h2>Support Charities</h2>
     <div class="row">
         <!-- Three columns of text below the carousel -->
         <hr class="featurette-divider">
         <div class="col-lg-3">
             <a href="signup.php">
-                <img class="img-circle" src="Images/registernow.jpg" style="width: 300px; height: 240px;"></a>          
-            <p>Register as a individual if you want to become an IDonate member!</p>
+               <img class="img-circle" src="Images/register-ind.gif" style="width: 300px; height: 240px;"></a>          
+            </a>
         </div>
 
         <div class="col-lg-3">
             <a href="pastevents.php">
                 <img class="img-circle" src="Images/stamp-right-past-events.jpg" style="width: 300px; height: 240px;"></a>
-            <p>Click here if you want to see past events!</p>
+            
         </div>
 
         <div class="col-lg-3">
-            <a href="pastevents.php">
+            <a href="upcomingevents.php">
                 <img class="img-circle" src="Images/Upcoming Events.jpg" style="width: 300px; height: 240px;"></a>
-            <p>Click here for upcoming events!</p>
+            
         </div>
 
         <div class="col-lg-3">
@@ -60,32 +60,32 @@ require_once 'header.php';
 
                             </div>
                         </form>
-                                <!--<p>Find one of the many Charities & Fundraisers using iDonate.ie</p>-->
+                               
                     </div> 
                 </div> 
                 <img class="img-circle" src="Images/searchcharity.png" style="width: 300px; height: 240px;">          
-                <p>Search for a charity</p>
+               
             </span>
         </div>
     </div>
     <!-- /END THE FEATURETTES -->
-    <hr class="featurette-divider">
+    
 
     <div class="row featurette">
 
         <div class="clear"></div>          
-        <div id="lista1" class="als-container content">
+        <div id="lista1" class="als-containers content">
 
             <h3 class="left">
 
-                charities we work with..
-
+                prioritized charities!
+                <br> <br> <br> <br>
             </h3>
             <br>
             <div class="scroller">
                 <span class="als-prev" data-id="als-prev_0">
 
-                    <img title="previous" alt="prev" src="images/left1.png"></img>
+                    <img title="previous" alt="prev" src="Images/left.png"></img>
 
                 </span>
                 <div id="als-viewport_0" class="als-viewport" style="width: 852px; height: 95px;">
@@ -93,7 +93,7 @@ require_once 'header.php';
                     <ul id="als-wrapper_0" class="als-wrapper" style="width: 5680px; height: 95px;">
 
                         <li id="als-item_0_0" class="als-item" style="left: 3408px;">
-                            <a href="https://www.idonate.ie/571_alone.html" target="_blank">
+                            <a href="http://alone.ie/" target="_blank">
 
                                 <img width="100" title="ALONE" alt="ALONE" src="https://www.idonate.ie/logos/New_logo_2013.jpg"></img>
                             </a>
@@ -101,7 +101,7 @@ require_once 'header.php';
                         </li>
                         <li id="als-item_0_1" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/668_mayo-cancer-support-association.html" target="_blank">
+                            <a href="http://www.mayocancer.ie/" target="_blank">
 
                                 <img width="100" title="Mayo Cancer Support Association" alt="Mayo Cancer Support Association" src="https://www.idonate.ie/logos/mayo-cancer-support.jpg"></img>
                             </a>
@@ -109,7 +109,7 @@ require_once 'header.php';
                         </li>
                         <li id="als-item_0_2" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/2134_irish-brain-tumour-support-group-cork-branch.html" target="_blank">
+                            <a href="http://www.irishbraintumoursupport.org/" target="_blank">
 
                                 <img width="100" title="Irish Brain Tumour Support Group Cork Branch" alt="Irish Brain Tumour Support Group Cork Branch" src="https://www.idonate.ie/logos/irish-brain-tumour-1a.jpg"></img>
                             </a>
@@ -117,7 +117,7 @@ require_once 'header.php';
                         </li>
                         <li id="als-item_0_3" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/1467_laois-domestic-abuse-service-.html" target="_blank">
+                            <a href="http://laoisdomesticabuseservice.ie/" target="_blank">
 
                                 <img width="100" title="Laois Domestic Abuse Service " alt="Laois Domestic Abuse Service " src="https://www.idonate.ie/logos/ldas_logo_jpeg.jpg"></img>
                             </a>
@@ -125,7 +125,7 @@ require_once 'header.php';
                         </li>
                         <li id="als-item_0_4" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/766_signforfun.html" target="_blank">
+                            <a href="http://signforfun.ie/" target="_blank">
 
                                 <img width="100" title="SignForFun" alt="SignForFun" src="https://www.idonate.ie/logos/SignForFun_Logo.jpg"></img>
                             </a>
@@ -133,23 +133,18 @@ require_once 'header.php';
                         </li>
                         <li id="als-item_0_5" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/1514_firstlight---irish-sudden-infant-death-association.html" target="_blank">
+                            <a href="http://firstlight.ie/" target="_blank">
 
                                 <img width="100" title="FirstLight - Irish Sudden Infant Death Association" alt="FirstLight - Irish Sudden Infant Death Association" src="https://www.idonate.ie/logos/First_Light_Initial_Logo_Final.jpg"></img>
                             </a>
 
                         </li>
                         <li id="als-item_0_6" class="als-item" style="left: 3408px;">
-
-                            <a href="https://www.idonate.ie/908_raising-and-giving-ireland.html" target="_blank">
-
-                                <img width="100" title="Raising and Giving Ireland" alt="Raising and Giving Ireland" src="https://www.idonate.ie/logos/RAG_IRELAND_Logo.jpg"></img>
-                            </a>
-
                         </li>
+                        
                         <li id="als-item_0_7" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/2003_kenya-orphan-aid-.html" target="_blank">
+                            <a href="http://www.kenyaorphanaid.ie/index.php" target="_blank">
 
                                 <img width="100" title="Kenya Orphan Aid " alt="Kenya Orphan Aid " src="https://www.idonate.ie/logos/kenya-1.jpg"></img>
                             </a>
@@ -157,7 +152,7 @@ require_once 'header.php';
                         </li>
                         <li id="als-item_0_8" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/917_irish-woodworkers-for-africa-t-a-just-forests.html" target="_blank">
+                            <a href="http://www.justforests.org/" target="_blank">
 
                                 <img width="100" title="Irish Woodworkers for Africa T/A Just Forests" alt="Irish Woodworkers for Africa T/A Just Forests" src="https://www.idonate.ie/logos/just-forests-1.jpg"></img>
                             </a>
@@ -165,7 +160,7 @@ require_once 'header.php';
                         </li>
                         <li id="als-item_0_9" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/2077_johan-jacobsen-trust.html" target="_blank">
+                            <a href="http://www.forjohan.com/take-action/" target="_blank">
 
                                 <img width="100" title="Johan Jacobsen Trust" alt="Johan Jacobsen Trust" src="https://www.idonate.ie/logos/TFJ_logo.jpg"></img>
                             </a>
@@ -173,7 +168,7 @@ require_once 'header.php';
                         </li>
                         <li id="als-item_0_10" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/1457_darndale-belcamp-integrated-childcare-service-ltd.html" target="_blank">
+                            <a href="http://www.darndalebelcampvc.ie/" target="_blank">
 
                                 <img width="100" title="Darndale Belcamp Integrated Childcare Service Ltd" alt="Darndale Belcamp Integrated Childcare Service Ltd" src="https://www.idonate.ie/logos/jigsaw-centre-1.jpg"></img>
                             </a>
@@ -181,7 +176,7 @@ require_once 'header.php';
                         </li>
                         <li id="als-item_0_11" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/1624_aiding-resources-charity.html" target="_blank">
+                            <a href="http://www.mycharity.ie/event/teamaidingresources/" target="_blank">
 
                                 <img width="100" title="Aiding Resources Charity" alt="Aiding Resources Charity" src="https://www.idonate.ie/logos/idonate_logo.jpg"></img>
                             </a>
@@ -189,7 +184,7 @@ require_once 'header.php';
                         </li>
                         <li id="als-item_0_12" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/1571_bright-beginnings-ferbane-community-childcare-centre.html" target="_blank">
+                            <a href="http://brightbeginningsferbane.com/" target="_blank">
 
                                 <img width="100" title="Bright Beginnings Ferbane Community Childcare Centre" alt="Bright Beginnings Ferbane Community Childcare Centre" src="https://www.idonate.ie/logos/bright-beginnings-1.jpg"></img>
                             </a>
@@ -197,7 +192,7 @@ require_once 'header.php';
                         </li>
                         <li id="als-item_0_13" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/1570_the-royal-irish-academy.html" target="_blank">
+                            <a href="http://www.ria.ie/" target="_blank">
 
                                 <img width="100" title="The Royal Irish Academy" alt="The Royal Irish Academy" src="https://www.idonate.ie/logos/ria_logo.jpg"></img>
                             </a>
@@ -205,7 +200,7 @@ require_once 'header.php';
                         </li>
                         <li id="als-item_0_14" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/1464_cry-cardiac-risk-in-the-young.html" target="_blank">
+                            <a href="http://www.cry.ie/" target="_blank">
 
                                 <img width="100" title="CRY Cardiac Risk in the Young" alt="CRY Cardiac Risk in the Young" src="https://www.idonate.ie/logos/cry-1.jpg"></img>
                             </a>
@@ -213,7 +208,7 @@ require_once 'header.php';
                         </li>
                         <li id="als-item_0_15" class="als-item" style="left: 3408px;">
 
-                            <a href="https://www.idonate.ie/822_vincentian-lay-missionaries.html" target="_blank">
+                            <a href="http://vincentians.ie/our-work/lay-ministry/vincentian-lay-missionaries/" target="_blank">
 
                                 <img width="100" title="Vincentian Lay Missionaries" alt="Vincentian Lay Missionaries" src="https://www.idonate.ie/logos/1387453204_18_HIgh_Res_Logo.jpg"></img>
                             </a>
@@ -415,7 +410,7 @@ require_once 'header.php';
                 </div>
                 <span class="als-next" data-id="als-next_0">
 
-                    <img title="next" alt="next" src="images/right1.png"></img>
+                    <img title="next" alt="next" src="Images/right.png"></img>
                 </span>
             </div>
             <div class="clear"></div>
@@ -425,7 +420,7 @@ require_once 'header.php';
 
 
 
-    </div>
+   
 
     <!-- FOOTER -->
     <footer>
@@ -433,40 +428,30 @@ require_once 'header.php';
         <p>2015 Students-NCI, &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer>
 
-</div>
+ </div>
+
 <noscript>
 <div style="display:inline;">
     <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/997298856/?value=0&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
+
+
+
 <script type="text/javascript">
-<!--
+
     swfobject.registerObject("FlashID");
-//-->
+
 </script>
 </body>
-</html>
+
 <script type="text/javascript" src="JS/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="JS/jquery.als-1.1.min.js"></script>
-<script type="text/javascript" src="JS/littleslide.js"></script>
+<script type='text/javascript' src='JS/litlleslide.js'></script>
+<script src="JS/bootstrap.min.js"></script>
+<script src="JS/ie10-viewport-bug-workaround.js"></script>
+</html>
+
 <!--references:
-http://www.csi.ucd.ie/staff/jcarthy/home/CourseNotes/History%20%20+%20chips.pdf
-http://www.tutorialspoint.com/computer_fundamentals/pdf/computer_generations.pdf
-http://www.byte-notes.com/five-generations-computers
-http://www.webopedia.com/DidYouKnow/Hardware_Software/FiveGenerations.asp
-http://pholeytech.blogspot.ie/2011/05/history-of-computer-second-generation.html
-http://itcoursenotes.webs.com/IT%20Lec%201%20History%20of%20Computers.pdf
-http://journal.info.unlp.edu.ar/journal/journal11/papers/JCST-Aug04-1.pdf
-http://www.niecdelhi.ac.in/uploads/Notes/btech/1sem/Computer%20Generations.pdf
-http://www.lsp4you.com/electronics/Generation%20of%20Computers.pdf
-http://www.theregister.co.uk/2014/07/09/ibm_3billion_megabuck_r_and_d/
-http://www.independent.co.uk/life-style/gadgets-and-tech/news/next-generation-computers-will-be-highly-interactive-devices-controlled-by-gestures-1901967.html
-http://www.webopedia.com/DidYouKnow/Hardware_Software/FiveGenerations.asp
-http://www.slideshare.net/Suaj/basics-of-computer-system-ppt?next_slideshow=7
-http://www.javascriptkit.com/javatutors/external.shtml
-http://www.tutorialspoint.com/computer_fundamentals/index.htm
-http://www.webopedia.com/DidYouKnow/Hardware_Software/FiveGenerations.asp
-http://histryofcomputr.blogspot.ie/2010/12/1st-gen.html
-https://fahmirahman.wordpress.com/2011/01/04/five-generations-of-computer/
--->
+
 

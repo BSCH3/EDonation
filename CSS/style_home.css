@@ -2,27 +2,10 @@
 /* CSS Document */
 
 
-*{margin:0; padding:0}
-div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote{margin:0;padding:0}
-body{margin:0; padding:0; color:#999999; font-family: 'open_sansregular'; font-size:13px; line-height:18px}
-table{border-collapse:collapse;border-spacing:0;}
-sup {vertical-align:text-top;}sub {vertical-align:text-bottom;}
-strong{ font-weight:normal; font-family: 'open_sansbold'; }
-img{border:0;}
-a{color:#EA6A00; outline:none; text-decoration:none; font-family: 'open_sansregular';}
-a:hover{color:#538f00}
-a:focus{outline:0 none}
+
 article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
 /* Headings */
-h1, h2, h3, h4, h5 h6{font-family:'HelveticaNeueLT', Helvetica, Arial, sans-serif; margin:0;padding:0; font-weight:normal}
-h1{font-size:30px}
-h2{font-size:20px; margin:20px 0 10px}
-h3{font-size:18px}
-h4{font-size:15px; font-weight:bold; margin:0 0 5px 0}
-/* Lists */
-ul, ol, li{list-style:none; margin:0; padding:0}
-br{margin:0; padding:0}
-.clear{clear:both; margin:0px; padding:0px; height:0px; overflow:hidden;}
+
 .left{float:left}
 .right{float:right}
 input{margin:0;padding:0}
@@ -36,12 +19,6 @@ p {margin:0px; padding:0px;}
 /*Layout*/ 
 
 /* *************  Header Start here  ************* */
-header {background:url(../images/header-bottom-border.png) repeat-x center bottom; margin-bottom:-8px; position:relative; z-index:10;}
-.login-stripe{ background: #f5f5f5; /* for non-css3 browsers */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f5f5'); 	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5)); /* for webkit browsers */ background: -moz-linear-gradient(top,  #ffffff,  #f5f5f5); /* for firefox 3.6+ */ height:54px; border-bottom:#eeeeee 1px solid;}
-.login-stripe p {padding:17px 0 0 0px;}
-
-.auctions {position:fixed; right:0px; top:175px;}
-.social {position:fixed; left:0px; top:191px; background:url(../images/social_icon.png) no-repeat left top; padding:10px 0 0 6px; width:64px; height:206px; visibility:hidden;}
 
 .button {background:url(../images/button.png) no-repeat left top; padding-left:6px; display:inline-block;}
 .button span {background:url(../images/button.png) no-repeat right bottom; height:34px; line-height:31px; padding:0 19px 0 14px; display:block; font-size:14px; color:#fff;}
